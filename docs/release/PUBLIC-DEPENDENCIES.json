@@ -1,0 +1,392 @@
+{
+  "source": "Installed distribution metadata on existing VM; no package/source redistribution by this inventory",
+  "date_local": "2026-11-03",
+  "packages": [
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/fastapi/annotated-doc",
+        "Documentation, https://github.com/fastapi/annotated-doc",
+        "Repository, https://github.com/fastapi/annotated-doc",
+        "Issues, https://github.com/fastapi/annotated-doc/issues",
+        "Changelog, https://github.com/fastapi/annotated-doc/release-notes.md"
+      ],
+      "license_files": [
+        "annotated_doc-0.0.5.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/annotated-types/annotated-types",
+        "Source, https://github.com/annotated-types/annotated-types",
+        "Changelog, https://github.com/annotated-types/annotated-types/releases"
+      ],
+      "license_files": [
+        "annotated_types-0.8.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "anyio",
+      "version": "4.16.0",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Documentation, https://anyio.readthedocs.io/en/latest/",
+        "Changelog, https://anyio.readthedocs.io/en/stable/versionhistory.html",
+        "Source code, https://github.com/agronholm/anyio",
+        "Issue tracker, https://github.com/agronholm/anyio/issues"
+      ],
+      "license_files": [
+        "anyio-4.16.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23",
+      "license_expression": null,
+      "license": "MPL-2.0",
+      "license_classifiers": [
+        "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"
+      ],
+      "home_page": "https://github.com/certifi/python-certifi",
+      "project_urls": [
+        "Source, https://github.com/certifi/python-certifi"
+      ],
+      "license_files": [
+        "certifi-2026.10.23.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Changes, https://click.palletsprojects.com/page/changes/",
+        "Chat, https://discord.gg/pallets",
+        "Documentation, https://click.palletsprojects.com/",
+        "Donate, https://palletsprojects.com/donate",
+        "Source, https://github.com/pallets/click/"
+      ],
+      "license_files": [
+        "click-8.5.0.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "fastapi",
+      "version": "0.162.0",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/fastapi/fastapi",
+        "Documentation, https://fastapi.tiangolo.com/",
+        "Repository, https://github.com/fastapi/fastapi",
+        "Issues, https://github.com/fastapi/fastapi/issues",
+        "Changelog, https://fastapi.tiangolo.com/release-notes/"
+      ],
+      "license_files": [
+        "fastapi-0.162.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "license_expression": null,
+      "license": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "home_page": "https://github.com/python-hyper/h11",
+      "project_urls": [],
+      "license_files": [
+        "h11-0.16.0.dist-info/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "home_page": null,
+      "project_urls": [
+        "Documentation, https://www.encode.io/httpcore",
+        "Homepage, https://www.encode.io/httpcore/",
+        "Source, https://github.com/encode/httpcore"
+      ],
+      "license_files": [
+        "httpcore-1.0.9.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "license_expression": null,
+      "license": "BSD-3-Clause",
+      "license_classifiers": [
+        "License :: OSI Approved :: BSD License"
+      ],
+      "home_page": null,
+      "project_urls": [
+        "Changelog, https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+        "Documentation, https://www.python-httpx.org",
+        "Homepage, https://github.com/encode/httpx",
+        "Source, https://github.com/encode/httpx"
+      ],
+      "license_files": [
+        "httpx-0.28.1.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+        "Issue tracker, https://github.com/kjd/idna/issues",
+        "Source, https://github.com/kjd/idna"
+      ],
+      "license_files": [
+        "idna-3.20.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/pytest-dev/iniconfig"
+      ],
+      "license_files": [
+        "iniconfig-2.3.1.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.2",
+      "license_expression": "Apache-2.0",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-api",
+        "Repository, https://github.com/open-telemetry/opentelemetry-python"
+      ],
+      "license_files": [
+        "opentelemetry_api-1.45.2.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license_expression": "Apache-2.0 OR BSD-2-Clause",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Documentation, https://packaging.pypa.io/",
+        "Source, https://github.com/pypa/packaging"
+      ],
+      "license_files": [
+        "packaging-26.3.dist-info/licenses/LICENSE",
+        "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+        "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+        "packaging/licenses/__init__.py",
+        "packaging/licenses/__pycache__/__init__.cpython-312.pyc",
+        "packaging/licenses/__pycache__/_spdx.cpython-312.pyc",
+        "packaging/licenses/_spdx.py"
+      ]
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "license_expression": null,
+      "license": "MIT",
+      "license_classifiers": [
+        "License :: OSI Approved :: MIT License"
+      ],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/pytest-dev/pluggy",
+        "Documentation, https://pluggy.readthedocs.io/",
+        "Changelog, https://pluggy.readthedocs.io/en/latest/changelog.html",
+        "Repository, https://github.com/pytest-dev/pluggy",
+        "Issues, https://github.com/pytest-dev/pluggy/issues",
+        "Funding, https://tidelift.com/subscription/pkg/pypi-pluggy"
+      ],
+      "license_files": [
+        "pluggy-1.7.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.2",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/pydantic",
+        "Documentation, https://pydantic.dev/docs/validation/latest/get-started/",
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Source, https://github.com/pydantic/pydantic",
+        "Changelog, https://pydantic.dev/docs/validation/latest/get-started/changelog/"
+      ],
+      "license_files": [
+        "pydantic-2.14.2.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.50.2",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": "https://github.com/pydantic/pydantic",
+      "project_urls": [
+        "Funding, https://github.com/sponsors/samuelcolvin",
+        "Homepage, https://github.com/pydantic",
+        "Source, https://github.com/pydantic/pydantic/tree/main/pydantic-core"
+      ],
+      "license_files": [
+        "pydantic_core-2.50.2.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0",
+      "license_expression": "BSD-2-Clause",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://pygments.org",
+        "Documentation, https://pygments.org/docs",
+        "Source, https://github.com/pygments/pygments",
+        "Bug Tracker, https://github.com/pygments/pygments/issues",
+        "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+      ],
+      "license_files": [
+        "pygments-2.21.0.dist-info/licenses/AUTHORS",
+        "pygments-2.21.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pytest",
+      "version": "9.2.0",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Changelog, https://docs.pytest.org/en/stable/changelog.html",
+        "Contact, https://docs.pytest.org/en/stable/contact.html",
+        "Funding, https://docs.pytest.org/en/stable/sponsor.html",
+        "Homepage, https://docs.pytest.org/en/latest/",
+        "Source, https://github.com/pytest-dev/pytest",
+        "Tracker, https://github.com/pytest-dev/pytest/issues"
+      ],
+      "license_files": [
+        "pytest-9.2.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "starlette",
+      "version": "1.10.0",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/Kludex/starlette",
+        "Documentation, https://starlette.dev/",
+        "Changelog, https://starlette.dev/release-notes/",
+        "Funding, https://github.com/sponsors/Kludex",
+        "Source, https://github.com/Kludex/starlette"
+      ],
+      "license_files": [
+        "starlette-1.10.0.dist-info/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "license_expression": "MIT",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Homepage, https://github.com/pydantic/typing-inspection",
+        "Documentation, https://pydantic.github.io/typing-inspection/dev/",
+        "Source, https://github.com/pydantic/typing-inspection",
+        "Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md"
+      ],
+      "license_files": [
+        "typing_inspection-0.4.4.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license_expression": "PSF-2.0",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Bug Tracker, https://github.com/python/typing_extensions/issues",
+        "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+        "Documentation, https://typing-extensions.readthedocs.io/",
+        "Home, https://github.com/python/typing_extensions",
+        "Q & A, https://github.com/python/typing/discussions",
+        "Repository, https://github.com/python/typing_extensions"
+      ],
+      "license_files": [
+        "typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "license_expression": "BSD-3-Clause",
+      "license": null,
+      "license_classifiers": [],
+      "home_page": null,
+      "project_urls": [
+        "Changelog, https://uvicorn.dev/release-notes",
+        "Funding, https://github.com/sponsors/Kludex",
+        "Homepage, https://uvicorn.dev/",
+        "Source, https://github.com/Kludex/uvicorn"
+      ],
+      "license_files": [
+        "uvicorn-0.54.0.dist-info/licenses/LICENSE.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "run_id": "f74721984ab54e669eb746489d9cf817",
+  "client_session": "01a1af51-2c16-7b20-90b6-a3a3f41d943c",
+  "client_context": {
+    "model": "gpt-5.6-luna",
+    "approval_policy": "on-request",
+    "sandbox_policy": {
+      "type": "read-only"
+    }
+  },
+  "external_provider_calls": 5,
+  "external_client_usage": {
+    "input_tokens": 93139,
+    "cached_input_tokens": 84608,
+    "output_tokens": 847,
+    "reasoning_output_tokens": 212,
+    "total_tokens": 93986
+  },
+  "external_cost": "unknown; not Vultr product calls; no monetary estimate",
+  "approval_boundary": "Launcher retained on-request/read-only and MCP prompt. Operator did not answer or change client approvals. User confirmed completion in chat. Per-call human clicks are not independently attested by this trace.",
+  "placement": "External Codex on Windows; bridge in existing WSL; room in existing local Docker daemon. LLM interpretation separately uses Vultr.",
+  "task_source": "controller fixed final-file probe and unchanged invoice mission verifier; no independent verifier dispatched for this external run",
+  "cleanup": {
+    "bridge_lease_closed": true,
+    "room": true,
+    "controlled_catalog": true
+  },
+  "trace_derivation": "e1-e21 unchanged from bridge report; e22 copied only from real public final client response. Original private report and client log preserved.",
+  "artifact_source": "Canonical JSON from actual agent read of /work/result.json (e14), exact-match checked against versioned mission; controller independently of agent text reports passed at e17.",
+  "artifact_sha256": "a1f2cc7e3240b6af96ef2c110b0b361ec1ab376d2ff66fc7b18543d690ddd0fc",
+  "old_failure": "Original Windows open failure cause unknown; not relabelled as fixed. New WSL route opened and completed once.",
+  "delta_checks": "3 focused tests passed; full launcher CheckOnly passed; one no-LLM stdio fixture opened/read input/closed without solving task. Previous suites inherited.",
+  "not_claimed": [
+    "original prior conversation imported",
+    "entire external host contained",
+    "container escape or block proven",
+    "Vultr placement of external client execution",
+    "new product release installed"
+  ],
+  "source_sha256": {
+    "services/agent/external_bridge.py": "0c877e1cd1b2b176e8c0a95bf21f0f4c0e72e7993884b2c1335da1c971577f7e",
+    "scripts/external_agent_mcp.py": "fbef5f69b7a1adcb9921a372bd1a858e7286566ae4fbd887bcaea0a479819c69",
+    "scripts/connect_external_codex.ps1": "c4043f08a3434298c23f9eb60ef8d593c22d7e94dbd2062fa949489d75cb9eca",
+    "services/agent/evidence_interpreter.py": "8f47fba3b8755b5697899e52fb04b6376958f1c02a62285fae1f99940e7c3467",
+    "services/agent/challenge_director.py": "a6b25ca9a8f832d8af618b993255e0cf465de4d3bd6ca1c4c63f9be7059846ee",
+    "tests/backend/test_external_invoice_delta.py": "df8199ee95b19dcc57262a029c04b17c1a3f7e51d23945ea05cff3e17a846e1b"
+  }
+}

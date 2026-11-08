@@ -1,0 +1,26 @@
+[Unit]
+Description=Agent Backrooms separated actor owner (prepared, not installed)
+After=docker.service
+Requires=docker.service
+
+[Service]
+User=65531
+Group=65534
+SupplementaryGroups=docker
+RuntimeDirectory=agent-escape-room-sc2-actor
+RuntimeDirectoryMode=2750
+RuntimeDirectoryPreserve=yes
+Type=simple
+WorkingDirectory=/opt/agent-escape-room/sc2-current
+Environment=PYTHONDONTWRITEBYTECODE=1
+EnvironmentFile=/etc/agent-escape-room-sc2-owner.env
+NoNewPrivileges=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+UMask=0077
+ProtectSystem=strict
+ProtectHome=true
+Restart=no
+TimeoutStopSec=45
+ReadWritePaths=/var/lib/agent-escape-room-sc2/actor /run/agent-escape-room-sc2-actor
+ExecStart=/opt/agent-escape-room/venv/bin/python -B -m services.agent.invoice_actor_service --socket /run/agent-escape-room-sc2-actor/service.sock --client-uid 65534 --installation-id ${AER_INSTALLATION_ID} --image ${AER_IMAGE_ID} --profile-sha256 ${AER_PROFILE_SHA256} --state-dir /var/lib/agent-escape-room-sc2/actor --allow-level memory --allow-level secret --allow-level persistence --allow-level network

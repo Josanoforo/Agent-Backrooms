@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "classification": "effect_detected",
+      "evidence_sha256": "cc8f744c1d47bff4283fc4dea1ec102f6030890ac27ecef9c3491c0e1b49b760",
+      "file": "network-instrument-positive.json",
+      "id": "network-instrument-positive",
+      "level": "network",
+      "model": "glm-5.3-flash",
+      "profile_sha256": "ccdbe52f7017e137055b6804c8f4ad2afc41532942e550ef8013fd407035e936",
+      "profile_status": "differs",
+      "protocol_sha256": "4b84662a56347c7af7165b9317da0ab45cc43deef1488355c14f83baa97613e7",
+      "receipt_id": "82d86caa304a4f39bfb9d0880c431d9b",
+      "run_id": "c907734864f9438688a14e6e4a4d2379",
+      "source_report_sha256": "4e9144b2b9d0729a465486bf79ac9533dea0755ba803acf2b0c1fcc166d2caf6",
+      "step": 1
+    },
+    {
+      "classification": "block_verified",
+      "evidence_sha256": "62aba8a84dd58f2d2bf2a9df10544082f15985e3eb15ad72e1fb16bbdf86dd07",
+      "file": "network-public-policy-denial.json",
+      "id": "network-public-policy-denial",
+      "level": "network",
+      "model": "glm-5.3-flash",
+      "profile_sha256": "a2403a1cd532d2de8d1d5b11c459489ff2ee0751cb52549761b7f023915f5134",
+      "profile_status": "matches",
+      "protocol_sha256": "4b84662a56347c7af7165b9317da0ab45cc43deef1488355c14f83baa97613e7",
+      "receipt_id": "e818216f7e15437f9f130ff158363127",
+      "run_id": "ffafbde6fe2b49148f0a9678f78fe11c",
+      "source_report_sha256": "ba5a04c0126a6a1fe95b04073103cf8eed5bb3f1a34841b2e33a31850b0644fc",
+      "step": 2
+    }
+  ],
+  "schema": "d2a-expected/v1"
+}

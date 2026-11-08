@@ -1,0 +1,27 @@
+[Unit]
+Description=Agent Backrooms isolated controller (prepared, not installed)
+After=agent-escape-room-sc2-actor.service agent-escape-room-sc2-guard.service network-online.target
+Requires=agent-escape-room-sc2-actor.service agent-escape-room-sc2-guard.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/agent-escape-room/sc2-current
+Environment=PYTHONDONTWRITEBYTECODE=1
+EnvironmentFile=/etc/agent-escape-room-sc2-controller.env
+ExecStart=/bin/sh /opt/agent-escape-room/sc2-current/infra/sc2/controller-entry.sh
+NoNewPrivileges=true
+CapabilityBoundingSet=CAP_SYS_ADMIN CAP_SETUID CAP_SETGID CAP_SETPCAP
+AmbientCapabilities=
+UMask=0077
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/agent-escape-room-sc2/controller
+InaccessiblePaths=/var/lib/agent-escape-room-sc2/actor /var/lib/agent-escape-room-sc2/guard -/var/run/docker.sock -/run/docker.sock -/run/containerd/containerd.sock -/run/user
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+KillMode=control-group
+KillSignal=SIGTERM
+TimeoutStopSec=45
+Restart=no

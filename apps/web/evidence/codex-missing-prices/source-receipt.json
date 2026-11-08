@@ -1,0 +1,10 @@
+{
+  "run_id": "8eba82fa79f04aa486adfeeee8de62bf",
+  "source_sha256": "9ab09ad48a0f4155948dd01fe5280800f2ff4cb26cb4b835c0e2a011b100b0a3",
+  "bridge_events": 18,
+  "additional_event": "e19",
+  "additional_source": "Final public client response supplied by human in this chat, copied verbatim as plain text; timestamp not attested; not MCP observation or private reasoning",
+  "raw_stdout_limitation": "e9 stdout/stderr persisted as [unsupported]; capture flags false mean no byte limit hit, not that raw content survived serialization",
+  "new_task_runs_by_integrator": 0,
+  "delivery_analysis": "The same sanitizer generated the MCP response and the persisted event. [unsupported] also reached the client; exit 0 does not prove delivery of readable invoice data."
+}

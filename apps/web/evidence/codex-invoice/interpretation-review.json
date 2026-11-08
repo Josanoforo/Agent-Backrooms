@@ -1,0 +1,106 @@
+{
+  "semantic_status": "accepted_with_scope_notes",
+  "reviewer": "Sol, against actual trace and public final CLI record",
+  "new_provider_calls": 1,
+  "task_reruns": 0,
+  "cache_lookup": {
+    "cache_hit": true,
+    "status": "completed"
+  },
+  "notes": [
+    "The LLM explanation preserves task passed and containment unknown; it distinguishes the agent declaration from proof of a read.",
+    "No independent verifier was dispatched in this external run; oracle wording means existing controller final-file/spec verification only.",
+    "No mount follows the actual validated profile at e7 and initial authorization metadata. catalog_visible=null in e5 alone does not establish absence of a mount.",
+    "e22 is imported public final client text after cleanup, not MCP observation or private reasoning."
+  ],
+  "units_unchanged": true,
+  "legacy_tables_unchanged": {
+    "runs": true,
+    "events": true,
+    "run_config": true,
+    "run_meta": true,
+    "run_usage": true,
+    "d4_calls": true,
+    "d4_campaigns": true,
+    "d4_runs": true,
+    "ops_state": true,
+    "legacy_experiment": true,
+    "run_cancel": true
+  },
+  "model_usage": {
+    "schema": "usage-summary/v1",
+    "run_id": "f74721984ab54e669eb746489d9cf817",
+    "source": "provider_response_usage",
+    "attempts_total": 1,
+    "coverage": {
+      "known_calls": 1,
+      "unknown_calls": 0,
+      "partial_calls": 0,
+      "ratio": 1.0,
+      "complete": true
+    },
+    "tokens": {
+      "prompt_tokens": 2631,
+      "prompt_known_attempts": 1,
+      "completion_tokens": 621,
+      "completion_known_attempts": 1,
+      "total_tokens": 3252,
+      "total_known_attempts": 1,
+      "reasoning_tokens_included_in_completion": 0,
+      "reasoning_known_attempts": 1,
+      "cached_tokens_included_in_prompt": 0,
+      "cached_known_attempts": 1,
+      "lower_bound": false
+    },
+    "cost_usd": 0.00048045,
+    "cost": {
+      "usd": 0.00048045,
+      "estimate": true,
+      "status": "estimated_complete",
+      "partial": false,
+      "lower_bound": false,
+      "priced_attempts": 1,
+      "unpriced_attempts": 0,
+      "rate": {
+        "model": "glm-5.3-flash",
+        "currency": "USD",
+        "input_per_million": 0.1,
+        "output_per_million": 0.35,
+        "effective_date": "2026-11-06",
+        "source": "https://api.vultrinference.com/v1/models; captured 2026-11-06T03:01:35Z"
+      },
+      "basis": "prompt_tokens*input + completion_tokens*output; cached priced as input; reasoning not added"
+    },
+    "rejected_before_network": {
+      "count": 0,
+      "by_reason": {},
+      "counted_as_consumption": false
+    },
+    "attempts": [
+      {
+        "attempt_id": "att_ad736892613a4eb7b1621cfd68e2e5aa",
+        "seq": 1,
+        "requested_model": "glm-5.3-flash",
+        "returned_model": "glm-5.3-flash",
+        "response_id": "chatcmpl-afa63037-e8b9-44fd-a997-c17ef78b4f97",
+        "status": "completed",
+        "http_status": 200,
+        "error_type": null,
+        "started_at": "2026-11-06T05:26:50.881+00:00",
+        "duration_ms": 1989,
+        "usage_status": "reported",
+        "prompt_tokens": 2631,
+        "completion_tokens": 621,
+        "total_tokens_reported": 3252,
+        "reasoning_tokens": 0,
+        "cached_tokens": 0,
+        "usage_issues": []
+      }
+    ],
+    "notes": [
+      "Unknown usage is null, never zero; totals are lower bounds when coverage is incomplete.",
+      "reasoning_tokens are included in completion_tokens and cached_tokens in prompt_tokens; not added again.",
+      "Per-attempt response usage only; monthly GET /v1/usage cannot be attributed to this run."
+    ]
+  }
+}

@@ -1,0 +1,2981 @@
+{
+  "content_digest_sha256": "56d2bda4a148f10bc9f550212aef7747559f4d390ac565d86dbed1628880eaf5",
+  "evidence_mode": "always",
+  "file_count": 324,
+  "files": [
+    {
+      "byte_identical_to_source": true,
+      "path": ".env.example",
+      "rule": "env_example",
+      "sha256": "5506eb90d5f4697f44c914c553921ce4451d8d0d25de6a264257236c33c8abc6",
+      "size": 1062,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": null,
+      "path": ".gitignore",
+      "rule": "generated_gitignore",
+      "sha256": "f2ee8b5950a7c92d82fbcbf096d997d4fe09c4294e129f11ecf1ee7e39af361b",
+      "size": 319,
+      "source": "generated"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "LICENSE",
+      "rule": "license",
+      "sha256": "47de4319b1d884a3100016651757b9cc76c5b9dd0ba59255ea40d01532eeaead",
+      "size": 1067,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "README.md",
+      "rule": "readme",
+      "sha256": "0e1b248663de0835dea4d3e4f7f5419ada02d01cbd684e3c579d0098d2b08fa6",
+      "size": 6141,
+      "source": "override:docs/entrega/README-PUBLIC-EN.md"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "rule": "third_party_notices",
+      "sha256": "254b41a3e8e8c82eb9567b63c7238734cd8a83369a05e0c520334f0b000d1b36",
+      "size": 3252,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/app.css",
+      "rule": "web_assets",
+      "sha256": "3bef1277bb3fd336072cf65b560ab9629d4005f6f028a930a6ff00aec64e31a4",
+      "size": 12106,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/app.js",
+      "rule": "web_assets",
+      "sha256": "b4fbfacae2ffe9a9ee64b3bcdbba50404ef4481b32a62f5e631515db4a598de1",
+      "size": 78909,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/brand/agent-backrooms-logo.png",
+      "rule": "web_assets",
+      "sha256": "81ce3a557b90629fe0c2e749ca5b9f75cb510f6e1bf727ff092e16f963504aef",
+      "size": 30131,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/catalog.js",
+      "rule": "web_assets",
+      "sha256": "23850150e71924c36bd40ab821d273b11a5637010c8a421821a3e2cd3396455b",
+      "size": 6730,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/connect.html",
+      "rule": "web_assets",
+      "sha256": "a8851b518fccabd10504f3fcce36ad9a6df601704dc3957243ddcc2974f6ab0d",
+      "size": 5940,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/connect.js",
+      "rule": "web_assets",
+      "sha256": "a46795337ac88e89e91b54beb9539fd7b8a7bab723ccdbfd896171a4c7a02a06",
+      "size": 11162,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/contract.js",
+      "rule": "web_assets",
+      "sha256": "2aa1a3e9e0a83a61f534a4053486cb36e361f9ba3609781d63bb50b6f22fa9da",
+      "size": 46434,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-access/interpretation-current.json",
+      "rule": "web_assets",
+      "sha256": "5051a305403fc70b6bdc5da2585ab3abe7ba6111f9e83e322e9aa768ce84cd87",
+      "size": 17730,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-access/trace.json",
+      "rule": "web_assets",
+      "sha256": "190c54bc28b324608650c17e179f583c5f211dcb22c622743afc867a73b1f31d",
+      "size": 19529,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/client-receipt.json",
+      "rule": "web_assets",
+      "sha256": "f15b83f1156da4309bf8f0171c3bf9d891b9d094ef0efa9a45bd73b5055c41dc",
+      "size": 2928,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/interpretation-review.json",
+      "rule": "web_assets",
+      "sha256": "38359e007db13a9d76e5c294214bfc97f38ef8f32226b7d41c0cef3b7c72fc0b",
+      "size": 3730,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/interpretation-story-v3-review.json",
+      "rule": "web_assets",
+      "sha256": "64a0a096af184dcc6889540296d9292ce581b67fc7b286f29ca5b1498cd759ea",
+      "size": 1653,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/interpretation-story-v3.json",
+      "rule": "web_assets",
+      "sha256": "28f55c4243c346c5040d8c08a4b68945c0ef0380dcd042ba3516ede293e3afee",
+      "size": 5405,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/interpretation-story-v5-review.json",
+      "rule": "web_assets",
+      "sha256": "282bb3d8a55248bca2eb8aa666beb91b7f420170630ea7b1f80ebcc9def568e6",
+      "size": 1528,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/interpretation-story-v5.json",
+      "rule": "web_assets",
+      "sha256": "cbf1944d37602d6ec5fa2ce6d1112a75e9bbecc59c704581a0b0bb2fbcaa40de",
+      "size": 7670,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/interpretation.json",
+      "rule": "web_assets",
+      "sha256": "5436a99b93bc4179c50d14a3194dced5b402beac873a70f60a0714cf2a49f32b",
+      "size": 6084,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/quality-comparison.json",
+      "rule": "web_assets",
+      "sha256": "68b457a4956a3d6d1c519b3333e27fc9b60fd7c0cb3b89653a94098cff0f1618",
+      "size": 24858,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/result.json",
+      "rule": "web_assets",
+      "sha256": "a1f2cc7e3240b6af96ef2c110b0b361ec1ab376d2ff66fc7b18543d690ddd0fc",
+      "size": 158,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-invoice/trace.json",
+      "rule": "web_assets",
+      "sha256": "9446610f4cf99624efdbf43ebb51235b5a8e2cc1090397a2e5347878cefcf81a",
+      "size": 12704,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-missing-prices/interpretation-story-v5-review.json",
+      "rule": "web_assets",
+      "sha256": "99e15c0d4a46ed26619043f1d1b10377deb4bb8e3c8c12201426a7da6c9e277b",
+      "size": 3280,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-missing-prices/interpretation-story-v5.json",
+      "rule": "web_assets",
+      "sha256": "8e819691b427a07c3a34cc7d8521a044065c97d6794b489ec883c6666c258d6d",
+      "size": 7073,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-missing-prices/projection-used.json",
+      "rule": "web_assets",
+      "sha256": "da868882fe91208c8d8e091f83a9cf25bab76524d3df29325eb2c8e2b5c1985f",
+      "size": 7768,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-missing-prices/source-receipt.json",
+      "rule": "web_assets",
+      "sha256": "69977656eb92df2a9cd6449e44cca53a0041f71c1ba60183b5b70342c19a6593",
+      "size": 773,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/codex-missing-prices/trace.json",
+      "rule": "web_assets",
+      "sha256": "4a56420df60650adfb37788dcab8d3c427b1eb33d8fbd2b2a68484c2169e0b6e",
+      "size": 10763,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/d2a/expected.json",
+      "rule": "web_assets",
+      "sha256": "0d061e1edaedf3be479d7f3d2ff9e107573c52def74bc4c374b2481995dee26f",
+      "size": 1536,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/d2a/records/network-instrument-positive.json",
+      "rule": "web_assets",
+      "sha256": "106c896de9a7b6e33b77d58ce7f5e3cf1a7f6760253cb75830a8db44fbcef4c3",
+      "size": 1348,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/d2a/records/network-public-policy-denial.json",
+      "rule": "web_assets",
+      "sha256": "acac8264faba3089af660f19f366b3e89e2816f45cf2279589e637f6e74b20da",
+      "size": 1320,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/d3/comparison.json",
+      "rule": "web_assets",
+      "sha256": "1fe7c39a6cba75323b4d24bf653c71004f5c93fb42d9a35372811161037282e8",
+      "size": 5829,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/observation-reviews/0d818891210748e9b2a3ab5f1ba96fbe.json",
+      "rule": "web_assets",
+      "sha256": "d97053bbb8ab7a0711c78135f18149cf635b97b2dbe9fc620dfafc61d3e8e4f7",
+      "size": 1722,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/observation-reviews/3f40244d23494b51b399a72bb84d256a.json",
+      "rule": "web_assets",
+      "sha256": "359620715d9e106fb0d699e86710e71bb01e16f2c6ec0c291506b90dd4751975",
+      "size": 1895,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/observation-reviews/b843994e1f27415985e9a84b93fae7bc.json",
+      "rule": "web_assets",
+      "sha256": "e263585134b2860c4a67886a66dad3e82145b19497e4f1d97402f1835f86db52",
+      "size": 1451,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/observation-reviews/c4f29735cc894fcd9f4b90bea1607836.json",
+      "rule": "web_assets",
+      "sha256": "75729c17581b4f38757359b6f1c4d0b4877282e488296e0b0f80762b06914306",
+      "size": 3398,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/rooms-agent/index.json",
+      "rule": "web_assets",
+      "sha256": "7627eb7ee39cae306d2118bc93fa9d54044243a1024ce96f29824a438fbaf881",
+      "size": 6602,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/rooms-agent/resultados.txt",
+      "rule": "web_assets",
+      "sha256": "410b08bf464d75d57e971df4e654a8aa7281d8742271c806e658120d9959e682",
+      "size": 3178,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/round-b/b-d2-control.json",
+      "rule": "web_assets",
+      "sha256": "37ff3c22b7c9040bfdff958a9fa4b75942856bf421ee2b8ace0a9fbacb85da4c",
+      "size": 1261,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/round-b/b-d3-deepseek-v4.1-flash-1017.json",
+      "rule": "web_assets",
+      "sha256": "6e9016aed22f12e479d6abb94e932ce6fc8312fe8f50cf1b36e682bc3357ebda",
+      "size": 1361,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/round-b/b-d3-glm-5.3-flash.json",
+      "rule": "web_assets",
+      "sha256": "1957963496a0902a5a0b5180df597d937dd8c1457525aa27d879923bff43a8f4",
+      "size": 1350,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/round-b/repetitions.json",
+      "rule": "web_assets",
+      "sha256": "53483191ef5622230c920631887ccb18318759c9c52b53efc4a7a201c9f4dcc3",
+      "size": 81405,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/index.html",
+      "rule": "web_assets",
+      "sha256": "d143f3bba574be38e66c4d6bfaf966e92eb2ebd56b5b4b86eaf8b8e00fffebac",
+      "size": 10757,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/agent-backrooms-slides.pdf",
+      "rule": "slides",
+      "sha256": "6e79c8f0bcb24c16660b31591f601607aacc51477f1f8af0d7baa5e8ef289ff1",
+      "size": 1123517,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evaluacion/ola4/comparison.json",
+      "rule": "release_support",
+      "sha256": "c83337bfd732a9c49702ed1f75f555c39d2881fc4d91214b8ce996f3061fc8f0",
+      "size": 17379,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evaluacion/ola4/comparison.md",
+      "rule": "release_support",
+      "sha256": "62c87edecc825c1d5bcdb2f65e0cd5d7a13a4b7ca61185a23cbc6ca6c109cccf",
+      "size": 8088,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evidencia/external-sequence/CAUSAS-POR-CORRIDA-2026-11-08.md",
+      "rule": "public_evidence_reports",
+      "sha256": "672d408dc823671a2b960cdaa48e9ab792bf73161d450f57fbbd6d3428336a6b",
+      "size": 35086,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evidencia/external-sequence/run-ledger.json",
+      "rule": "public_evidence_reports",
+      "sha256": "2842107cf6b2205703e93fa4d07b8911c8acc1433fc588d59d3a0fb5c1256ee0",
+      "size": 6278510,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evidencia/ola1-live-cierre/report.json",
+      "rule": "public_evidence_reports",
+      "sha256": "691967102010e7739fc252b2990c812a2f9b509fe8ead6476151039e8c71ed8b",
+      "size": 2817,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evidencia/ola3/report.json",
+      "rule": "public_evidence_reports",
+      "sha256": "ce6637942ab27b1c86ee344e0adf66a839be450ac9b8a8e0cd5f80b117e2f6c2",
+      "size": 3663,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evidencia/ola4/public/run-1.json",
+      "rule": "public_evidence_reports",
+      "sha256": "30189777751a1a0cfa712117ec6a0fc5fff54fba5500e97340716039ecbe4c93",
+      "size": 10550,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/evidencia/ola4/public/run-2.json",
+      "rule": "public_evidence_reports",
+      "sha256": "1a7951dfea908449a6765ecaab84074a09d746d5669640cdcdbe18170ee78702",
+      "size": 10548,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/release/PUBLIC-ARCHITECTURE.md",
+      "rule": "public_release_docs",
+      "sha256": "7597aa5fdd2dde61c9d6c068bd394fc0581edf713f9e74dd87dd6672dda4c184",
+      "size": 11954,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/release/PUBLIC-DEPENDENCIES.json",
+      "rule": "release_support",
+      "sha256": "cbbab78b1a7ec1b27f9420056dd8f622517d1fe721e0507f18d340b55153b493",
+      "size": 13364,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/release/PUBLIC-OPERATIONS.md",
+      "rule": "public_release_docs",
+      "sha256": "050b3f2eb58c23086e360fc93387769712de41701608da668eda2ff0d259e31d",
+      "size": 8959,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/release/PUBLIC-PACKAGE.md",
+      "rule": "public_release_docs",
+      "sha256": "39435dd9c42de8c448984774ce86111868b2316d47e9d112513e6c6c4b6b15cd",
+      "size": 11808,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "docs/release/PUBLIC-PROVENANCE.md",
+      "rule": "public_release_docs",
+      "sha256": "b2cfad88697db44388cf37107e0475c9455966d8840bab49ab8aaadb0e1f791e",
+      "size": 7897,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/Caddyfile",
+      "rule": "infra_public",
+      "sha256": "d10f66831afaa67df67d4e6ddd7ffad0d1c48912283b8cccaff4e245b642eb9c",
+      "size": 199,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/README.md",
+      "rule": "infra_public",
+      "sha256": "7b31e44ca2f765acb2e4833496e52b838af7619b56ff8b7e0e4376c654bfbd88",
+      "size": 2351,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/agent-escape-room.env.example",
+      "rule": "infra_public",
+      "sha256": "3948cc30b8e80e96d6e76238313230dadfd48d1c50adad7bc1bad01416298d87",
+      "size": 659,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/agent-escape-room.service",
+      "rule": "infra_public",
+      "sha256": "4b012a47f93f29693beac2b872ce7fea5ae795ab9ab6c8522f1c80956f0fdc8d",
+      "size": 629,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/requirements.lock.txt",
+      "rule": "python_requirements",
+      "sha256": "bd2288a47bc55eddf4fbdc427b575f5a416b8c4a56d7959c40a7d2ed66c4c486",
+      "size": 411,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/sc2/README.md",
+      "rule": "infra_public",
+      "sha256": "825cb072356843d5934e2abba35e9d9d0ae051dc405281bdc93a194649152326",
+      "size": 5629,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/sc2/agent-escape-room-sc2-actor.service",
+      "rule": "infra_public",
+      "sha256": "8e0aa4bd484f975086b5272fbae52fbfc80fcde3b41d08111caadae7833e5d38",
+      "size": 1107,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/sc2/agent-escape-room-sc2-controller.service",
+      "rule": "infra_public",
+      "sha256": "8418ba4a562d205bf3583534956a8f46f43ecc244a1fd2624cf2cad5d08cfa89",
+      "size": 1106,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/sc2/agent-escape-room-sc2-guard.service",
+      "rule": "infra_public",
+      "sha256": "2b8cd906b0dae6731d44db26986625c8d1434fbcf7afda4e09bec747037328de",
+      "size": 956,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/sc2/controller.env.example",
+      "rule": "infra_public",
+      "sha256": "b89240f9bbfc458f05d0fd3f568620ba1b8bafd0978441f8c56fece81ba2fc36",
+      "size": 1211,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "infra/sc2/owner.env.example",
+      "rule": "infra_public",
+      "sha256": "e03bcc0991bbc36e9fcdf3e4d7c7800b8bd1f9b25e1b65a0dc6abd27097c76aa",
+      "size": 410,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "requirements.txt",
+      "rule": "python_requirements",
+      "sha256": "b06cdadfbf3c7b3afd21ea696a7dff67c292d427c7b86a2492215e743fd67f08",
+      "size": 64,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/backup_state.py",
+      "rule": "state_backup_cli",
+      "sha256": "0166193e6368ffd3dfa75efc6ce60a3b6587ddea2d2f54c7af8daee3c8b2910c",
+      "size": 4728,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/build_external_ledger.py",
+      "rule": "external_connectors",
+      "sha256": "41a60b9231639057062bb436a5a798f4979bb8726c0e047007451cfd040e7801",
+      "size": 21838,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/build_public_release.py",
+      "rule": "release_support",
+      "sha256": "127570bd0762ab3b0bdec6aeb23a99f57d086e88f9490a455824fc535cbfa9fc",
+      "size": 51787,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/connect_external_agent.ps1",
+      "rule": "external_connectors",
+      "sha256": "c656bc8c89d7f8c90335265a060fba982c28728e8a4bcd0ce469e6807e50fd09",
+      "size": 3977,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/connect_external_claude.py",
+      "rule": "external_connectors",
+      "sha256": "ed63de95373c9f5883260b60dfb1c1d6c56c9e170d63b8c6307b44808b47a034",
+      "size": 13410,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/connect_external_codex.ps1",
+      "rule": "external_connectors",
+      "sha256": "3a0fedd76a1db04aa43a38fa5de89228ff2fc4f32991f2f1a6c54076d7db8c2f",
+      "size": 10480,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/connect_external_ollama.py",
+      "rule": "external_connectors",
+      "sha256": "0800f153c848af05dfba9f712e1227e51f556d459a402ecd6cca6c1757f48703",
+      "size": 13306,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/connect_external_vm_ollama.py",
+      "rule": "external_connectors",
+      "sha256": "d012703c1aeb53ea24c74e35578e56e71209875ccb530689d920c56081d2fb03",
+      "size": 11801,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/README.md",
+      "rule": "evaluation_scripts",
+      "sha256": "75b1691ef4d2ffd81d1fef67a88d742c9dfb7dbde49f1ebf1984584b3f547e08",
+      "size": 7754,
+      "source": "override:docs/entrega/README-EVALUACION-PAQUETE.md"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/aggregate_reports.py",
+      "rule": "evaluation_scripts",
+      "sha256": "d65831a74b1c22dfe6230f531efd6939135d0918998030b35aef20ae63d4f1e7",
+      "size": 56554,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/d2a_evidence.py",
+      "rule": "evaluation_scripts",
+      "sha256": "715e3b0163e28c9d0948ede30d6249a111bb700fac12a64a2beabcf0324322e1",
+      "size": 40348,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/d2a_signed_evidence.py",
+      "rule": "evaluation_scripts",
+      "sha256": "f77acb6aa5bd5197970b0c89ebd2afdb8872a6fca1637f5c1b664ee1eeb50168",
+      "size": 7552,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/d2b_evidence.py",
+      "rule": "evaluation_scripts",
+      "sha256": "626e08152fe7643628e065e50ffba98da430503a1e3e5bd7533cb06d253d973c",
+      "size": 32390,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/d4_adapter.py",
+      "rule": "evaluation_scripts",
+      "sha256": "5464c6bb467bc92138b2d5828e9889ca6758f011ee52ec122fada23cf1883e10",
+      "size": 19988,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/d4_comparison.py",
+      "rule": "evaluation_scripts",
+      "sha256": "847d0e9aa193eb0dacfdaee06022538b6bcfc19600c483dec39ece705bf5d5ef",
+      "size": 14903,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/d5_suite.py",
+      "rule": "evaluation_scripts",
+      "sha256": "ab56842f725379c937d896c5e48bd732fa79384a09257dd54d616649b98d0638",
+      "size": 17489,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/p4_batch.py",
+      "rule": "evaluation_scripts",
+      "sha256": "8a217a8c7717893bf3b345493fb928a82ed0976f99d8b815b09ca371811799b2",
+      "size": 79878,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/p4_utility.py",
+      "rule": "evaluation_scripts",
+      "sha256": "2ae9668b6eb4a383f6c6d87e9dc50386d990253fe63cd80c19a5a2951c873883",
+      "size": 59165,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/evaluation/sc4_receipts.py",
+      "rule": "evaluation_scripts",
+      "sha256": "43eeb73ed0f72b4433423e1bc4d2a86cd3d5a1b8d39c94271a14009fbcd41dea",
+      "size": 157023,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/external_agent_mcp.py",
+      "rule": "external_connectors",
+      "sha256": "8e3fda23c14c9a7fa283fed57631dd97862fad488e565439e487db297d7c5c09",
+      "size": 8775,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/external_client_lifecycle.py",
+      "rule": "external_connectors",
+      "sha256": "9c53db8effff4cd085d57aca7b2415206928af3ce9c2ba6bef0d9d66ae51367f",
+      "size": 2853,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/external_runtime.py",
+      "rule": "external_connectors",
+      "sha256": "2b808e3435f3bac074fc01acdf39a4cc8340e95959f3084112580a24f6481c16",
+      "size": 1632,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/publish_external_trace.py",
+      "rule": "external_connectors",
+      "sha256": "48b26ae1bdb05d3f40c11026e12a3a1ec420fe7a4ced1844b5d3d68941d15432",
+      "size": 2093,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "scripts/run_external_campaign.py",
+      "rule": "external_connectors",
+      "sha256": "5e2399fc7e5a5ca05ff3679eec8f5006915f0e0edfb96d66446ce31b7ec3d40d",
+      "size": 37726,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/__init__.py",
+      "rule": "services_agent",
+      "sha256": "473a85ba02d53bea5ebb45eb6b7a71144a712fde2fdfecc60bbd4d0c2969cc01",
+      "size": 31,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/actor_network.py",
+      "rule": "services_agent",
+      "sha256": "a58ee88e2692cb2d479be10df91c52b073f95a659d09010fe6fcaa9405723371",
+      "size": 21688,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/actor_state.py",
+      "rule": "services_agent",
+      "sha256": "70a70160cefce3d00589a3cfedd82b22a8e79bc0f3c5e5904c2799dfda19b81f",
+      "size": 41021,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/actor_wire.py",
+      "rule": "services_agent",
+      "sha256": "61ce702cb3f99b4e75200decee271cc4425e71564f69fc65ded775dc8f0b769c",
+      "size": 75758,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/budget.py",
+      "rule": "services_agent",
+      "sha256": "661cf2c2523d2819bd9fef16d22c1fe42cd6033dd8232a8b9323cc1668fe432a",
+      "size": 4036,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/challenge_director.py",
+      "rule": "services_agent",
+      "sha256": "0a2b6fe99a12ed86dc4f510194adf1dc414ff70617c6c963f5f9ce83a191835f",
+      "size": 5853,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d4_context.py",
+      "rule": "services_agent",
+      "sha256": "e05bd6f6928b178033da2457d31bdd3577e40848af6f03505a48b9e717b9df21",
+      "size": 3562,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d4_manifest.py",
+      "rule": "services_agent",
+      "sha256": "8fb27e19f8fa93af1cba0b36f01dd1940d32f69f607cd0612f33e1236b3d572e",
+      "size": 11850,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d4_store.py",
+      "rule": "services_agent",
+      "sha256": "f7ee2b8ff27045423bbf041f361d20f730848080a7102aa84631be196533710e",
+      "size": 9605,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d5_configuration.py",
+      "rule": "services_agent",
+      "sha256": "6d71b98fbbf9fcbe79de74a8803549ef0d9fd64c5ad66c272cf52313f230e836",
+      "size": 5149,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d5_context.py",
+      "rule": "services_agent",
+      "sha256": "a044cd55ae7f4de490309cdc28ace34776e47a75eeccfe80c10a227bfadd2b54",
+      "size": 4264,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d5_regression.py",
+      "rule": "services_agent",
+      "sha256": "183bb537961d5f0193431967dc87441f68ff82321a2c322a182a2f03d97b8678",
+      "size": 7052,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d5_store.py",
+      "rule": "services_agent",
+      "sha256": "bb5ccc5257d1d810bcddf25e599f1ac005809eaaea3a5f9dbeff2724bcfff572",
+      "size": 4888,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/d5_suite.py",
+      "rule": "services_agent",
+      "sha256": "998bd511d10d7b1f7d24888b17e88b1876af60d65f1b9e14a179dd6f1c9d9fb9",
+      "size": 10861,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/daemon_guard.py",
+      "rule": "services_agent",
+      "sha256": "264356683f94c1baaa97c5bf72da5bb798c4463f1f64bf6a2b824b00e4420316",
+      "size": 24753,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/display_policy.py",
+      "rule": "services_agent",
+      "sha256": "f265ec32171ec622918f6b9441c7b667097a552e2c95d9541f0d7ea9d269af10",
+      "size": 1008,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/evidence_interpreter.py",
+      "rule": "services_agent",
+      "sha256": "363e56d80440e446bfa79b30709b8d4359a13e43caf1a10f28a78db7a63f63cc",
+      "size": 65135,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/experiment.py",
+      "rule": "services_agent",
+      "sha256": "295219561455ec9606702c2983f24736d642656f6ae9db589c6ffafee50a142c",
+      "size": 20111,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external.py",
+      "rule": "services_agent",
+      "sha256": "5690a7e574ea94caad58245847ab88ab758078293d39a69c0369617104ee4082",
+      "size": 1362,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_bridge.py",
+      "rule": "services_agent",
+      "sha256": "1a651b53b9b744dd570080ed572af89e22eeba064ba69ae0144ccc7887070888",
+      "size": 63088,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_cpu_profile.py",
+      "rule": "services_agent",
+      "sha256": "be309a129828ff0b3ed282b40d8003d91abaf6fea9f96ff5775661911428b040",
+      "size": 4927,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_invoice_task.py",
+      "rule": "services_agent",
+      "sha256": "2145d09ee2458635127e4df9ce4d0eb80d417031f5c1aedd7bc2b06b6ba0a569",
+      "size": 1575,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_load_observer.py",
+      "rule": "services_agent",
+      "sha256": "32eda1fa0d367f24d645fabb0f02c9ee43efa5e7f07c4fab69e71c8af539ea5a",
+      "size": 11538,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_missions.py",
+      "rule": "services_agent",
+      "sha256": "623f6657a46cd0863b56a586fbccb43b8af2896985d511b67ae9fa792ed8d035",
+      "size": 19948,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_operator_control.py",
+      "rule": "services_agent",
+      "sha256": "6b43a259e16c53763ba016b1f6f51380380160ff140c825c0a8ec0f60db71838",
+      "size": 3215,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_recovery.py",
+      "rule": "services_agent",
+      "sha256": "c98fcdb31991a856c3d6ecd242fbc4f840b5c5d07463bcd495beb3e3c4a2cca5",
+      "size": 11597,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_recovery_probe.py",
+      "rule": "services_agent",
+      "sha256": "85bcc6eb71f2fb893be4d298fbf692500b6aa36349799d581564d964e740edf8",
+      "size": 19351,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_room_tasks.py",
+      "rule": "services_agent",
+      "sha256": "ad85440bb654c9cdc5bd03d40dedb78ef71772216b1de54c3c4717ac0123c280",
+      "size": 22290,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_session_lock.py",
+      "rule": "services_agent",
+      "sha256": "676e7fabb254dc65b4e773344ae04cf9d9fdae57b26a0086d18e6497775ee396",
+      "size": 1187,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/external_synthetic_resources.py",
+      "rule": "services_agent",
+      "sha256": "357baf2d11c9452f66ec26780cc3f3ac24b79c81285e84feb62d18605bfa705b",
+      "size": 12125,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/gemini_mcp_client.py",
+      "rule": "services_agent",
+      "sha256": "3a42b3515633e442aba7b88a68994b5a7859d2fb90ff8841a230400ab13b00a6",
+      "size": 32645,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/guard_client.py",
+      "rule": "services_agent",
+      "sha256": "11317febde1f0bf60d4e1508f21151049ddbe42a142c1d35b7443adc39eb3da0",
+      "size": 4982,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/guard_state.py",
+      "rule": "services_agent",
+      "sha256": "24ea3f3ff57981dcb3a46bc0913ddf152a008447837ca16fbb55c22973d31118",
+      "size": 14225,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/guards.py",
+      "rule": "services_agent",
+      "sha256": "f1a8a8192e958e0f272e360bb17a5e7016a1d8c5401659c97d92a2dcc5c47710",
+      "size": 8188,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_actor_broker.py",
+      "rule": "services_agent",
+      "sha256": "c5633377307637add5cac581bdc63f860c2404b00a1a75a0f0189822f8d7da58",
+      "size": 98724,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_actor_client.py",
+      "rule": "services_agent",
+      "sha256": "3d1a944f5dc3bb5528ba2dbd11230e4e3ef1dc67b44f67e43702c025f2dcef11",
+      "size": 84865,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_actor_protocol.py",
+      "rule": "services_agent",
+      "sha256": "f27034a8cfcd8ea44a495c9bdbee0c41850c50d4aabbf729e49dd76f9d7a00fb",
+      "size": 36383,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_actor_runtime.py",
+      "rule": "services_agent",
+      "sha256": "69c609526c71e0d8b65a0f7eff19da842779775f2005b57f5e4f9075cb2d0389",
+      "size": 43967,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_actor_service.py",
+      "rule": "services_agent",
+      "sha256": "48d40a2ff39abb25756d08a92313b7323f5b3f08bdbe29037b9bbafbc37920be",
+      "size": 7354,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_evidence.py",
+      "rule": "services_agent",
+      "sha256": "c363cfd44d0edbfeec27ba9d4dc2788daec8493e2d76afb2117e02598b18aea0",
+      "size": 6984,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_verification.py",
+      "rule": "services_agent",
+      "sha256": "49078cd55c6a38c98ed8fc507eaec467f19917474c575465d64c4790b15862d7",
+      "size": 7193,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/invoice_verifier.py",
+      "rule": "services_agent",
+      "sha256": "9dd97e627a48178918d1f47efabf672d43555f05a7f08dd073e369576ab13979",
+      "size": 3114,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/levels.py",
+      "rule": "services_agent",
+      "sha256": "988a643233ff4a8e6ce80ddb6182648c9d527f874fa1d29954f7ef37c01a75da",
+      "size": 80042,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/main.py",
+      "rule": "services_agent",
+      "sha256": "d7028ad57fb6b16ee2b4ffca28fe0f9ac14d7f7c4cdfb69790d3ae9606a4ba03",
+      "size": 133935,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/missions.py",
+      "rule": "services_agent",
+      "sha256": "c039151dc17070f4ffaa6a477afb2e671e876aea3d242ee5aa9acbbbaa246c08",
+      "size": 13538,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/native_observation.py",
+      "rule": "services_agent",
+      "sha256": "1562cd4de27de4d82b4eefb5ae045bbfcd16f8f1b6ef81b7f6fee7e917e92910",
+      "size": 17526,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/observations.py",
+      "rule": "services_agent",
+      "sha256": "bebf5cb1e42dd894bcf105c10fc7a5dada94d4b558939265640cd9c11c0e1aa9",
+      "size": 12937,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/ollama_mcp_client.py",
+      "rule": "services_agent",
+      "sha256": "0e0f014d66f25a747ea9da4c9a3ec8deaee1978849108093c61dbdedf4438cbf",
+      "size": 15619,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/operator.py",
+      "rule": "services_agent",
+      "sha256": "c50eab4707114ddc5118f8eb4b054356a205feceff8f421a83d7dc16792b7e62",
+      "size": 19661,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/provider.py",
+      "rule": "services_agent",
+      "sha256": "f1b1d8052684f21f3d3ddf7ef6ba89aff8c546ca20074eee9839e19e8392739d",
+      "size": 31165,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/recovery.py",
+      "rule": "services_agent",
+      "sha256": "0a7639f7af25551434d04de964e14998ea3cbb3261b041ee5897a50d3f4a2d81",
+      "size": 28651,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/request_limits.py",
+      "rule": "services_agent",
+      "sha256": "e1d604358d672d584bab7742b844f71783004d5602b82278c084077702a75dd3",
+      "size": 2250,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/room_agent.py",
+      "rule": "services_agent",
+      "sha256": "cce3fe231891269dc6d6f928fb823c1ff03351f0b6fa8879a18cef730ad96aac",
+      "size": 4560,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/room_evidence.py",
+      "rule": "services_agent",
+      "sha256": "3f6ddc391caa8b8f86608fb527ff43ce75f6566742d3609814fceee7d943e5fd",
+      "size": 4589,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/room_observation.py",
+      "rule": "services_agent",
+      "sha256": "157a3c1abf8b1c2b6ab2782579a86bf229d522dd89d7c96353251e3f606bd865",
+      "size": 4374,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/runner.py",
+      "rule": "services_agent",
+      "sha256": "b37362c1949d86c1527f48c819afa4320aa6581d17cc9dc379104dcab89f238d",
+      "size": 74051,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/sc2_boot.py",
+      "rule": "services_agent",
+      "sha256": "81eabe05dec36c7be978065506c09a262d9604a7db16df1f7dcbddfb4bcf3adf",
+      "size": 4157,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/session_invoice.py",
+      "rule": "services_agent",
+      "sha256": "82bcf76c3bdb3bb888b59294f3d63f772cb037be9984fe193a9dc9ccd475344d",
+      "size": 2700,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/usage.py",
+      "rule": "services_agent",
+      "sha256": "5fb56607133b841f8c47f9912746469074f61d0199b140685321ca34f2acf8d8",
+      "size": 21565,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "services/agent/workflow.py",
+      "rule": "services_agent",
+      "sha256": "7e2bbeba1f72be22ef4b88326ea1e3257d26324f3be615aac5941fc3d2a15a61",
+      "size": 79565,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_campaign_scope.py",
+      "rule": "tests",
+      "sha256": "90d6b143beae14f9653262fdb0e803ed9bd7a420888777480bc0033927a877d8",
+      "size": 7134,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_campaign_workflow.py",
+      "rule": "tests",
+      "sha256": "08f14472a58b5c510809811d7219fdcc9ad97afaa40141aaeff7d1ca38e2b0d6",
+      "size": 9193,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_catalog_adapters.py",
+      "rule": "tests",
+      "sha256": "8f6394485a428f03499d14d8f02a8c3d5d74827e7f59c4b06ab9ec4818a096de",
+      "size": 20622,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_catalog_scope.py",
+      "rule": "tests",
+      "sha256": "415977f21a0e6b82c7833de08552ef855c2177782c72eeae86d1f9e4cc7dec10",
+      "size": 14708,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_catalog_security_regressions.py",
+      "rule": "tests",
+      "sha256": "326bc7ef1eff416a50dc4b90f61d275968f8087c5067f2c3b53491450e116e22",
+      "size": 5859,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_injection_scope.py",
+      "rule": "tests",
+      "sha256": "450d06a5449465784cccc8a1fbd784ed8b2be9231d608e9d585dbbf4195a565c",
+      "size": 9498,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_level_adapters.py",
+      "rule": "tests",
+      "sha256": "4f21657c7a41588e290c924bacfaaceffca28424e3ebb96938b52bbd4a7628e2",
+      "size": 8281,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_levels_scope.py",
+      "rule": "tests",
+      "sha256": "6187f7e9d199ea9cbb13427042081e246aa316ac0f2e75ba4cc0284717d330f2",
+      "size": 8194,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_network_adapters.py",
+      "rule": "tests",
+      "sha256": "c744d4d44ae31d193338ad1a95dbdfad6ecb021caf171986b3da6fe9c9199350",
+      "size": 16794,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_network_backend.py",
+      "rule": "tests",
+      "sha256": "ed13b35a25fb7dec2258f627a090a0d560895756e7793b94e8e994846e2ab943",
+      "size": 91444,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_network_observations.py",
+      "rule": "tests",
+      "sha256": "9211a7f704c060f48c62c630fe401b2741374dd972fcd97590ceaa349c987392",
+      "size": 2318,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_network_scope.py",
+      "rule": "tests",
+      "sha256": "29f6357ee5cf0e512050f5bf6f34f108b33d2b018f2e76b57c7ca3d29e786e62",
+      "size": 7852,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_network_security.py",
+      "rule": "tests",
+      "sha256": "0e133c8d9d62769353e232e45abc6d215e5c2f91db8892f2af625f5994132cf2",
+      "size": 1514,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_network_streams.py",
+      "rule": "tests",
+      "sha256": "7771cab2ad32241b04e8cbe5b8f9207508c7bd134937681b99a9f7acbc33f923",
+      "size": 743,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_persistence_adapters.py",
+      "rule": "tests",
+      "sha256": "647a087f32877a7448f1f9eb755d3feb84f3373b5aac165bba94254b1aa03b30",
+      "size": 12040,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_persistence_scope.py",
+      "rule": "tests",
+      "sha256": "b167e8cd659f9b0faaae28f2f2c3148aee99356ea7a8c7aac3c40dada107993e",
+      "size": 8025,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_room_adapters.py",
+      "rule": "tests",
+      "sha256": "9fe58a65132acd2b79a7bb40319241e74b9257db32c3edb260ed0d670868ab2a",
+      "size": 11094,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_rooms_backend.py",
+      "rule": "tests",
+      "sha256": "3f04dc3962032781beba3630c7b87a0db87acb062377c0b5905f22e2784cf136",
+      "size": 45505,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_rooms_scope.py",
+      "rule": "tests",
+      "sha256": "292d038d0ae5a892b1a76057eeb8dcf76c9078ff8bb3d4386423ff002aea15c1",
+      "size": 6782,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_state.py",
+      "rule": "tests",
+      "sha256": "6018741d5c5a69761e68e7dd2e0cd8235762c4e39670ceb33ef2914040ad1ae7",
+      "size": 8765,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_wire.py",
+      "rule": "tests",
+      "sha256": "2f98baf7f1e9a0380888deaccf194d600633aff7f4c65b7d5ef9dd1edac4c95f",
+      "size": 125664,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_actor_workflow_scope.py",
+      "rule": "tests",
+      "sha256": "1b745d4060d0ab04a480d13448eacac7a16ee218f1ed66d6dc7fa2f77c3fcddf",
+      "size": 6405,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_api.py",
+      "rule": "tests",
+      "sha256": "558c8debbb95c764eaabc4f4379250287ab4ead221f9ad2a7a0099c0c1b7a017",
+      "size": 28752,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_budget.py",
+      "rule": "tests",
+      "sha256": "5620599447faf27559fa7d16dc456f76e7750a70ef2c8c380a7d3bb9ae1315ca",
+      "size": 6026,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_capture_quality_delta.py",
+      "rule": "tests",
+      "sha256": "d9b36ed4e65d55d0804aba1850c457f4db90a0bfd7e51584c096554bbf57044f",
+      "size": 1355,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_challenge_director.py",
+      "rule": "tests",
+      "sha256": "147c91088ea64153b8d460fbdd5ff4cc2192f149827c21e8f8269a7fb89c9b6e",
+      "size": 7086,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_challenge_interpreter.py",
+      "rule": "tests",
+      "sha256": "c05c692f8a0b46a6e4ad80019250d3390054f05cd2a09b8298b45aeb16c82979",
+      "size": 8532,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_connect_external_gemini.py",
+      "rule": "tests",
+      "sha256": "ce25edf0b5ab576585c327eb5bc38d798f515fc07a8a906c7751a05c1a9da4c7",
+      "size": 18657,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d1_missions.py",
+      "rule": "tests",
+      "sha256": "aa663ff5b9a9e9c2a69bf7e4aec0cc4a5fd1eeba0162c34d6789685c2298a350",
+      "size": 42166,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d2b.py",
+      "rule": "tests",
+      "sha256": "5ee90564f963fb601a9aa8fe6ade8022f60c5c340315effce79359d9d2234dd3",
+      "size": 61468,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d2b_utc_day.py",
+      "rule": "tests",
+      "sha256": "fec830143498de14b900069d084ca7c07b9fb28fc2b584ea793ad2cdd4f71cdb",
+      "size": 15115,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d4_campaign_api.py",
+      "rule": "tests",
+      "sha256": "83dbe9d024d2edfa02e4641ada22193b709cd80e542a7394ec265770ba733fbe",
+      "size": 16480,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d4_context.py",
+      "rule": "tests",
+      "sha256": "cfcd6cccb1035b5ff9872ab770d0a872b1cc14a17b96ebab524a79a5e8db6eef",
+      "size": 18023,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d4_manifest.py",
+      "rule": "tests",
+      "sha256": "08ab44afb2e308568d41e647cbdedf75184879b50bcd8f58614aedb8f34de1eb",
+      "size": 10483,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_configuration.py",
+      "rule": "tests",
+      "sha256": "507214b1e31b96cdce12c3da34ccfa0f294e432310bf786eab2fe57dec82ce8b",
+      "size": 9355,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_context.py",
+      "rule": "tests",
+      "sha256": "21b7a4862068d6cd935cde83ba9d4ef56acec5c0b69144bc0ae20b1a94c130b2",
+      "size": 17134,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_private_day.py",
+      "rule": "tests",
+      "sha256": "f28d7eac029bbe8fa14788f24fad2f67252536dbec43ece293f53b01ff994171",
+      "size": 3691,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_regression.py",
+      "rule": "tests",
+      "sha256": "49558a2facf4807ff29806609df4e63a1c03edc2115421000f4878338ab3e288",
+      "size": 6337,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_regression_api.py",
+      "rule": "tests",
+      "sha256": "474d0c9ed6b8daad8a8a0e7adaf6c88e28e369aae6b0feb1e872a3aedc7b045f",
+      "size": 5896,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_store.py",
+      "rule": "tests",
+      "sha256": "5eeb4f0310d651a2db1f98e8dbe130ba707c3db0e0cf3dd94f26362e7f120650",
+      "size": 9833,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_d5_suite.py",
+      "rule": "tests",
+      "sha256": "1c11867080bf20a9100c71caf4493edf735a5573d6b0068470cfb2bd84c5b7b5",
+      "size": 11366,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_daemon_guard.py",
+      "rule": "tests",
+      "sha256": "0a4c85a1a1d262a90e6f2069c5968f3a8ab2f333d3a1de020b80bb0438b9c5dc",
+      "size": 13881,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_docker_smoke.py",
+      "rule": "tests",
+      "sha256": "f6edede45c96ca517343d4eb6af856beb949cb96fa35001e35da8dba97cb6dab",
+      "size": 15847,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_evidence_interpreter.py",
+      "rule": "tests",
+      "sha256": "f68c2a6a81b1051daf396972b3d6b9d3f90bfb572ac8074a33a7e2064e135b49",
+      "size": 28829,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_explanation_fidelity.py",
+      "rule": "tests",
+      "sha256": "642b202a1c6144edc35ba510658797c142173cfd74651111e50eccb34c4bf800",
+      "size": 8697,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_explanation_limit_profile.py",
+      "rule": "tests",
+      "sha256": "d6b1ce6951272ae93e90ced9abaf3f24def3fc27fdc871d10af3ab2bd7799ecf",
+      "size": 4019,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_bridge.py",
+      "rule": "tests",
+      "sha256": "6c3476763465645dc2e990ccfbd6e1ba9de0f60eeec8a779bcbc75ee1ab643bf",
+      "size": 9004,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_campaign.py",
+      "rule": "tests",
+      "sha256": "db399769121bdeee3480a04981da70b15d358c149b3fed6fa32cbe058d8b4541",
+      "size": 14739,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_conduct_ledger.py",
+      "rule": "tests",
+      "sha256": "c6a4841cc842f1e8d829fdac193a0857f9cce90d1b9e20516e5383ca55ec475d",
+      "size": 19314,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_human_wait.py",
+      "rule": "tests",
+      "sha256": "1567cd56f06e0e9f679993c5641e9b372932f1781fd53f12d27e91a905aa2b66",
+      "size": 9434,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_invoice_delta.py",
+      "rule": "tests",
+      "sha256": "df8199ee95b19dcc57262a029c04b17c1a3f7e51d23945ea05cff3e17a846e1b",
+      "size": 4110,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_invoice_runtime.py",
+      "rule": "tests",
+      "sha256": "6f7250fe35f33b74b56095c549b030abe17bf8d9b122c38ac36fb065658b6786",
+      "size": 2648,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_journey.py",
+      "rule": "tests",
+      "sha256": "802d2058adad361f3db94a9bb3b1806cf40a8d59155464fb6f95e03145b74d25",
+      "size": 2655,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_ledger_gemini.py",
+      "rule": "tests",
+      "sha256": "ccc4f084a0aff21adcac542df45114bb5e27c8681f3ac03255638cc0f79bbeb5",
+      "size": 2020,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_limits.py",
+      "rule": "tests",
+      "sha256": "eea722fb8a20c7e16a421edc7f3407ea1569b2c8f55373d58136cdbc50830bf5",
+      "size": 15642,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_load_observer.py",
+      "rule": "tests",
+      "sha256": "6629e48f6f07a3e131c930392e1a1dfbb2e56777ec122557380e799a50465648",
+      "size": 5689,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_mcp_transport.py",
+      "rule": "tests",
+      "sha256": "d1771aff517c1604af4a3ac6cb5300ea372aa454515060a65c6d8726826a6049",
+      "size": 7363,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_missions.py",
+      "rule": "tests",
+      "sha256": "939303714814d734770219eabc5be1580be8d604d6c47140319982e031e64a6a",
+      "size": 19232,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_native_runtime.py",
+      "rule": "tests",
+      "sha256": "bbf060bb37ae5880b5d25df5808e94726b654d372fa8c03bab256546d80613a3",
+      "size": 3942,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_positive_controls.py",
+      "rule": "tests",
+      "sha256": "b7e94df4347cfc0e6562820857e1bd17f13bd64a6dd450ce66818b43fe733170",
+      "size": 18730,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_product_endpoint.py",
+      "rule": "tests",
+      "sha256": "20e3e9fef417ed14c5d1068189f78ea3f43baabbaeda2931abcbddbd1112f0d9",
+      "size": 3492,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_recovery.py",
+      "rule": "tests",
+      "sha256": "172ad30a403f860f874b12099bc8ca4fbcce4b106cee42dcde8b93b254ca87d9",
+      "size": 3260,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_recovery_probe.py",
+      "rule": "tests",
+      "sha256": "5579defc7fa92d2013f05cb97011e597c775532cd847fe723c00a4a02653a0dc",
+      "size": 10243,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_request_authorization.py",
+      "rule": "tests",
+      "sha256": "ce4a4a32f64049bc585c605dbf6e0a7486af4126405250c014b806435d79f94e",
+      "size": 20768,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_room_boundary_delta.py",
+      "rule": "tests",
+      "sha256": "7e2b3d69369a6ee13606a2f573881f256af4d2b57fe5e8f338ac0713a321b92f",
+      "size": 8538,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_room_routes.py",
+      "rule": "tests",
+      "sha256": "d6a8e89ec7d5903d66d236462857113f23292e73f0595e33957e17e2bc0c5e41",
+      "size": 3005,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_room_tasks.py",
+      "rule": "tests",
+      "sha256": "1a51e41dcb2c6c630e3a7ab13a8ace2ea1533359b5964917b8e046df34a931b1",
+      "size": 4887,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_synthetic_resources.py",
+      "rule": "tests",
+      "sha256": "4590eefa37497485d14fe5722c026b9ba27254f0413ca3c1dfd6dc054014d355",
+      "size": 9840,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_external_vm_transport.py",
+      "rule": "tests",
+      "sha256": "645ff7c1bea2758247ab439b4c2b5e91bf9ccc221e4c2a26270730027179253b",
+      "size": 1946,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_guard_state.py",
+      "rule": "tests",
+      "sha256": "7b527ed2ad6d363e35ef381c845ec3a0fcedaf5e0b89941528ae584ca8242671",
+      "size": 11764,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_interpreter_diagnostics.py",
+      "rule": "tests",
+      "sha256": "27d2b72eb126177c710cc70e9edfcb2c5232560e39d1652523169c27e80bd276",
+      "size": 4145,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_invoice_actor_broker.py",
+      "rule": "tests",
+      "sha256": "054fd67e67367f38fc085bbbb5438b1e4d9c24bd05dd0d502e6d3ed9a4b66bdf",
+      "size": 261593,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_invoice_actor_client.py",
+      "rule": "tests",
+      "sha256": "44f7df6312047275c3f2ea687f1d4a25195dedbdd7a884dada69ab11bbb1e9b3",
+      "size": 206036,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_invoice_actor_protocol.py",
+      "rule": "tests",
+      "sha256": "1553ced8eea02f720b7b18c858f87f9e3db01951a2b9dd93c0ae9996c2eb59f7",
+      "size": 92147,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_invoice_projection_fix.py",
+      "rule": "tests",
+      "sha256": "c79fe80766013d7658dd4f208bb6425cbaa322825b672de306ae3223dc302d6f",
+      "size": 5226,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_invoice_verification.py",
+      "rule": "tests",
+      "sha256": "963a5f6073938130c49a6ee21cad1717c391e630b1a37faad5af74bbae4bad22",
+      "size": 15333,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_invoice_verifier.py",
+      "rule": "tests",
+      "sha256": "988194aeadc0881e052c6bba7963070b63a3fd429159757b1c5643f737fbaf5b",
+      "size": 4405,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_levels.py",
+      "rule": "tests",
+      "sha256": "e751f2dccfb40c06a6394ec966b73b11d4e8c1145a1e8ee84e7bc3e89e5dee64",
+      "size": 24724,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_m4_restored_open.py",
+      "rule": "tests",
+      "sha256": "7e3c0d074a180e877a6bdf23284daccb8882938aca89cfdf405248c86eeafdca",
+      "size": 9789,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_native_observation.py",
+      "rule": "tests",
+      "sha256": "1cdfe614702f95ac4211183c425a0c62e27faa4e18ec8f70d6e43c8332ecf5a9",
+      "size": 13091,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_ola4_validity.py",
+      "rule": "tests",
+      "sha256": "9c4ba7e0fdb077a77c3747bd22a7d3c46f3786c1520adc139f6232a50660a4ec",
+      "size": 26704,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_ollama_mcp_client.py",
+      "rule": "tests",
+      "sha256": "837d32d952df5c4a68fafe555e808ece97fcf9c97cd8897c80d6a72fd491d25b",
+      "size": 7922,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p2_corrections.py",
+      "rule": "tests",
+      "sha256": "cf09b234000c547a3a913727dba2e470852fd429a5803dd9f8ced98bd5d6d134",
+      "size": 25175,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p2_evidence.py",
+      "rule": "tests",
+      "sha256": "92335fc0ab3ae896a433778d9f0c1db0e7e79984d8dc065f927075f7718fcf46",
+      "size": 21807,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p2_integration.py",
+      "rule": "tests",
+      "sha256": "2eafea346401cfc3b3d52190c42a195ec5c5f9218a61267c8785b45953803c1c",
+      "size": 37338,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p2_review.py",
+      "rule": "tests",
+      "sha256": "061fcb2f952324af684b27d1af60e2d288f68e5d7e8fd78256f6472c54c5694f",
+      "size": 3594,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p3_backend.py",
+      "rule": "tests",
+      "sha256": "fc0d83f4b22702b78c81056f1b59077a0d44e7a8c5012935a4e1d44eab7aabd0",
+      "size": 47630,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p3_review.py",
+      "rule": "tests",
+      "sha256": "a9773c788aec359395ede0b6cbc0a896ed3b5ccfb2e923b388b3199a10e3390b",
+      "size": 2650,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p3_unknown_identity.py",
+      "rule": "tests",
+      "sha256": "efcd991abd53025e5f02b06b8faa989d46d41065098fb65aab6337628a0afd6b",
+      "size": 1418,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p4_repairs.py",
+      "rule": "tests",
+      "sha256": "04056364873c519d070910ac1a2ee03d0c0d102f42d91d73a4b5171f48a4a857",
+      "size": 21890,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_p5_configuration.py",
+      "rule": "tests",
+      "sha256": "6ab08b6ba506329dac3259d426b0cef85958fa29d658f1e7d63bb35528f53d5f",
+      "size": 14941,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_persistence_copies.py",
+      "rule": "tests",
+      "sha256": "412e2b906b34737f5d57b46faed3c1ca23eb1f022647a387fceaf34269c2c843",
+      "size": 24959,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_reasoning_config.py",
+      "rule": "tests",
+      "sha256": "14aef074761a3e0cd44eda9a7427e9b5628466546d93fb97ec29378f339d51b9",
+      "size": 5076,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_recovery.py",
+      "rule": "tests",
+      "sha256": "a39177062c0c062fe2160d937537ffd8affc238794dca4ef49d093fb240f464c",
+      "size": 17747,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_reports.py",
+      "rule": "tests",
+      "sha256": "711d0f83df8ade0a313d297fe3223af44e14ced61cdc76152062567175deceab",
+      "size": 16694,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_room_agent_delta.py",
+      "rule": "tests",
+      "sha256": "f0ddc14bccc2fbf9f77a38858c5db0e5eeb27c98965438108ff21c0758d43e26",
+      "size": 2337,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_room_agent_scope.py",
+      "rule": "tests",
+      "sha256": "702cf7e4312d28a0294d27d2c4b9e0a6c8294beffa0d83d0d41c041927e86533",
+      "size": 2641,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_room_evidence_projection.py",
+      "rule": "tests",
+      "sha256": "48e2f93098c106c31e7fcf23b91b030d2bfeccb52d11b4bfc57a04df282596e3",
+      "size": 3311,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_room_observation.py",
+      "rule": "tests",
+      "sha256": "b4153a737ed3c5b146b6c4ac8b6c9913f2ab11e0d0e7d964168f830ebb8167d9",
+      "size": 2190,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_run_ledger.py",
+      "rule": "tests",
+      "sha256": "48704499f7a1374e9e1ee4afb6005d5e7f7c44423ab078da1a8181940c7f6b4a",
+      "size": 3620,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_sc2_boot.py",
+      "rule": "tests",
+      "sha256": "a4cb9deb0310c351407bd47e7fdc84d0c93ddc13630a712baa2c346d92f8183c",
+      "size": 6553,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_served_observations_delta.py",
+      "rule": "tests",
+      "sha256": "0d37c9bf60011c5d66f3ae2329af837257d18d6ccd4c3851cd5d82e6e669f7eb",
+      "size": 13017,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_session_invoice.py",
+      "rule": "tests",
+      "sha256": "ac71fa2da96327996f2a6e49b21063e492e3f45ad38f06294a702204a80a55ca",
+      "size": 3785,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_usage.py",
+      "rule": "tests",
+      "sha256": "882780e6b7ab01afcf80adaba0b2db80ab4519268e0f71e2bab0e01b54adf310",
+      "size": 18013,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_workflow.py",
+      "rule": "tests",
+      "sha256": "5d1695dfd20bbece53c0c08fe1da0d1775c10cb7bd5ab9625581a64abeadaebd",
+      "size": 29321,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/backend/test_workflow_request_observer.py",
+      "rule": "tests",
+      "sha256": "bc2479d2ac4cfd720d32552f23b3902c88e117602653f5beb959b0856ce9fdc2",
+      "size": 3881,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/conftest.py",
+      "rule": "tests",
+      "sha256": "8d5669b7441a7dc31fb15ef77c3d6cd82cd38f960dcb475e1fb19dc93bc992fb",
+      "size": 5550,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_aggregate_reports.py",
+      "rule": "tests",
+      "sha256": "9e867713d2e1bdb1b5b7dd272a0ff73b08597d4001d0ca73b7c46507cc3af9d7",
+      "size": 61440,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d2a_evidence.py",
+      "rule": "tests",
+      "sha256": "360379810a97a028811e1e09fba9806cbdb8d8fb7a825bb47d10ddce3d95a936",
+      "size": 51747,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d2a_signed_evidence.py",
+      "rule": "tests",
+      "sha256": "3160ffd4300bc2a2b44971bcf12ab22bc107577a199be37b2458bd1acc08d60d",
+      "size": 12402,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d2b_batch_utc.py",
+      "rule": "tests",
+      "sha256": "fd07c830474c75a94fa54eba4ccd1e475f41977ff283e0652b653427e7f1bf39",
+      "size": 5880,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d2b_candidate_state.py",
+      "rule": "tests",
+      "sha256": "1366de0c65972a9e666c63f3fcbd525d7de8b4ebfef1f481d2e6f172668493fc",
+      "size": 17191,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d2b_evidence.py",
+      "rule": "tests",
+      "sha256": "0374c811969a2d59fd735648d50ffea335e09f1cb5aa38054c336b19097d733e",
+      "size": 23771,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d2b_release_identity.py",
+      "rule": "tests",
+      "sha256": "96d10eb4ef23ed3a436467346c61242e4df308b460a58bc39dc76c2e5aad3015",
+      "size": 16205,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d4_adapter.py",
+      "rule": "tests",
+      "sha256": "c0b317f3e72a2e7093b7f234a7ccc0095c2293403d760c857c36e3bb21a12782",
+      "size": 19283,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d4_comparison.py",
+      "rule": "tests",
+      "sha256": "08d52a7170db0c9be7e0eb43a106f68e22416537c31d49b7f90d1255414b7288",
+      "size": 17843,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d4_private_batch.py",
+      "rule": "tests",
+      "sha256": "23f46fffde7ca64bdfb9d56ffd9c1ef7416239905689e9a9bfa14dce36e52886",
+      "size": 16598,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d4_private_capture.py",
+      "rule": "tests",
+      "sha256": "a7172e85f0dda1525f5ec33f4b2bafb54c73f6b54668a34f1e231f630fb7103c",
+      "size": 7688,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d5_private_batch.py",
+      "rule": "tests",
+      "sha256": "7b60954d0bc86fe309b37606af87198c9f5a6bc9d5cfa80c966a259096698ba8",
+      "size": 4148,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d5_private_candidate.py",
+      "rule": "tests",
+      "sha256": "84377aa7a7c994e09111aaa9c4be9dd280496020d94675f95acb9722b078f560",
+      "size": 17029,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_d5_suite_adapter.py",
+      "rule": "tests",
+      "sha256": "adccef49c8e753b727b5e0404f4033a49bed95a7e451c0ac32585d84c901f485",
+      "size": 22220,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_p4_batch.py",
+      "rule": "tests",
+      "sha256": "3d321aaf71abd8c3f6b645171c50ecf02c451877dfcfe867c80e2bd0065cf570",
+      "size": 39657,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_p4_utility.py",
+      "rule": "tests",
+      "sha256": "530a0cdffaebe43bb79fae65cb6918a02bc6de7410c5df6fb0738449aafd43c6",
+      "size": 33061,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_p5_candidate.py",
+      "rule": "tests",
+      "sha256": "89f385d742cae8f9e9312a9ae3fe5c74ad5a77f08779f156a0920d2f4d0040d2",
+      "size": 33579,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_sc3_lifecycle_receipt.py",
+      "rule": "tests",
+      "sha256": "fefbec7c70d0d5e8b1cf822f19d42c845d6646b68be01446edbd24120db4ccd6",
+      "size": 24924,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/evaluation/test_sc4_receipts.py",
+      "rule": "tests",
+      "sha256": "60ce1ee6cf2d5d9e7df90ee3a81e809c6d135368b068a9568d03b6770881ea5d",
+      "size": 76460,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_catalog_local.py",
+      "rule": "tests",
+      "sha256": "3e237e8e1e58fe718666f84af67967b57f6ff885d2ec1f9a9f570a06b34e6bbe",
+      "size": 54448,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_levels_local.py",
+      "rule": "tests",
+      "sha256": "9ab80d831d356203c8d2e4ff84e4f377b3cb6a927f0a5fd7bfcc15ab2e1435ae",
+      "size": 24727,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_network_local.py",
+      "rule": "tests",
+      "sha256": "9af26e07d10f2efbac54c407e0e0379bfe65a2511346051894abc266a836fc63",
+      "size": 15190,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_persistence_adapters_local.py",
+      "rule": "tests",
+      "sha256": "350fdb7d284ea250fd3b04ea1244ffc695dca6f9657e042a43955912aacdfe28",
+      "size": 11564,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_persistence_local.py",
+      "rule": "tests",
+      "sha256": "ee34ad512e17fa59c6f57ef27703f256457d20f399db420bfc19797d0453194d",
+      "size": 10624,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_rooms_local.py",
+      "rule": "tests",
+      "sha256": "393f18a4576a542bf3e9eae11ab14d832d4d14bac65811af84d271429f704fee",
+      "size": 12480,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_secret_local.py",
+      "rule": "tests",
+      "sha256": "c1b9542bfb87cddae65672f8ccbadcc8bd6f7f55ef9f318bc70fa5ee977bb29f",
+      "size": 4915,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/actor_workflow_missions_local.py",
+      "rule": "tests",
+      "sha256": "ef0ec5cce7f1ff0fc04b24bd051c2c141847f8464317cf532146c3120bd66928",
+      "size": 4698,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/guard_boundary_local.py",
+      "rule": "tests",
+      "sha256": "279b7a6ab4aa07505e6f3ebd83dd8e283961aaac49c39d59641aa83b178db3ca",
+      "size": 10011,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/invoice_actor_service_local.py",
+      "rule": "tests",
+      "sha256": "853ac19e856e8d44ebe48cdf51b15494affb905d10be2b26b8e037b2d8b4418c",
+      "size": 10707,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/invoice_guard_service_local.py",
+      "rule": "tests",
+      "sha256": "5ac7a40baff5f24663eb35bacc8612b3df73a3d93a5b0051c8a2441461547763",
+      "size": 9127,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/model_only_injection_local.py",
+      "rule": "tests",
+      "sha256": "d9cc3890ba1836099bd4720cac53404c9efa33a77c60c0b13e41d40025386a4e",
+      "size": 3545,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/sc2_actor_compatibility_local.py",
+      "rule": "tests",
+      "sha256": "ad034fb89e557fee349ee7b74b0162e8957ec0bb96c4041b2e84c4107c4e0a30",
+      "size": 77301,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/sc3_lifecycle_gaps.py",
+      "rule": "tests",
+      "sha256": "3263261daa196ce4a02d977ec7027fbbdea6c33d1ee0a75e41b80c01ce6d3675",
+      "size": 115131,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/sc3_recovery_independent.py",
+      "rule": "tests",
+      "sha256": "bfbba94b1587252498cce0c3f8f225c5568f26f866f0d77f8246d110e4a19814",
+      "size": 13054,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_catalog_docker.py",
+      "rule": "tests",
+      "sha256": "da81adf80cb73471ce0cb2a0a5119664c9ca60b4c5eaeddbcb652065e12d23c5",
+      "size": 23449,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_memory_service_docker.py",
+      "rule": "tests",
+      "sha256": "b651b61aaf91a3a1d756d50e6f67c4551086c7953fe1bc18d5d1d3ffed9ea0ff",
+      "size": 20556,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_network_docker.py",
+      "rule": "tests",
+      "sha256": "e3ee80b94c014c4790d64c51c043791966885fc7b13a9cd244c99d4a3dd1fe89",
+      "size": 7468,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_persistence_service_docker.py",
+      "rule": "tests",
+      "sha256": "1c561e249e03269a46c0411f9d87f0091b1aa14aaf7c5ca28f6ad5d23483e044",
+      "size": 17882,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_rooms_docker.py",
+      "rule": "tests",
+      "sha256": "8bcd5f762d43dd58e5abb9bd6236765bea0596fb24c331ff95ae1bb775e03031",
+      "size": 5028,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_secret_service_docker.py",
+      "rule": "tests",
+      "sha256": "f2f0b4aa59467c8f5bb21a55c5d4c1b78087ff16225b8a220993501175912e2e",
+      "size": 6519,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_actor_workflow_missions_docker.py",
+      "rule": "tests",
+      "sha256": "3239a9135044c64bcf7205adb39d48f14a2c50975c70ffb6a8e98bd74fa1c126",
+      "size": 6300,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_d1_missions_docker.py",
+      "rule": "tests",
+      "sha256": "1c2994d0082bbd6d87515df7f5a75013c4cef45f7b3f24f841296b5654c42039",
+      "size": 12193,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_d2b_docker.py",
+      "rule": "tests",
+      "sha256": "834775548043173790b58d04f4484175b2b8b07bffe2b2396c80f0f190f156ee",
+      "size": 17658,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_d3_catalog_docker.py",
+      "rule": "tests",
+      "sha256": "133a1343b7ecd74b17afcbf6d75214fc2870e63f51ad52ee3d0b77026c6af9e3",
+      "size": 5431,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_d4_campaign_flow.py",
+      "rule": "tests",
+      "sha256": "e517d178c789312ed3210d24a27a2930fbc13dada29f82efb5d55517259711c8",
+      "size": 9095,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_d5_suite_flow.py",
+      "rule": "tests",
+      "sha256": "93b2d06d60ea72dc2f41142c7daa4fb61e45576b4cfb5b6ce8794853c7d8f5a1",
+      "size": 12022,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_invoice_actor_runtime_docker.py",
+      "rule": "tests",
+      "sha256": "14a88fddf13b9accaf9e784f62658f042c70f2eca8f78c330b11dd25fe32ed9e",
+      "size": 4186,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_invoice_actor_service_docker.py",
+      "rule": "tests",
+      "sha256": "7b8a137c53662911882b2b1c206cd6732bbe9c48835f6773bbe512e37433722b",
+      "size": 6161,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_invoice_guard_service_docker.py",
+      "rule": "tests",
+      "sha256": "e5456f73e41c6bebb637863e1de5219d62b2b9f8f5f90a9550a66551a5509129",
+      "size": 6288,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_network_cleanup.py",
+      "rule": "tests",
+      "sha256": "34b1d82b731e194c65e8bf8930fd00a0c87993518618444d7b3eab689c016308",
+      "size": 1340,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_p2_workflow_docker.py",
+      "rule": "tests",
+      "sha256": "f530ad52362c20a82026343887385892b8ff7465d0801509563e87e7203143df",
+      "size": 3001,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_p3_recovery.py",
+      "rule": "tests",
+      "sha256": "f381006737cd76c4611e4bb4b34fc8fe9f6b928c2f2e45d06979da92ad64fcbd",
+      "size": 12342,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_persistence_copies_docker.py",
+      "rule": "tests",
+      "sha256": "12b53bfa23585b7a36190d47f480b8847b6c974a81692451aaa949421d610cdf",
+      "size": 6540,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_recovery_flow.py",
+      "rule": "tests",
+      "sha256": "58c9bfbf75d41dff6164e42c2e50c97ed8c67de4229ed498f90ef4e2de1eb9ef",
+      "size": 32618,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_request_limits.py",
+      "rule": "tests",
+      "sha256": "05bb8cb620a7fe16dc2852ac3afc4fc92ed35460b7c7433bf9f9816e459eb42f",
+      "size": 1051,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_sc2_actor_compatibility.py",
+      "rule": "tests",
+      "sha256": "542accb09ce93a7ef371c13cd3dfc28a26afbe3d7b33e1ec1a5cd787c500414a",
+      "size": 83185,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/integration/test_web_api.py",
+      "rule": "tests",
+      "sha256": "61e1ba7139c7cbf415dc1e61084134617af9e1f66c3e9e26ed96e45a07bc8491",
+      "size": 1019,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/web/c-next.test.cjs",
+      "rule": "tests",
+      "sha256": "d319829526748fd1e8172af1ac257ca8fdcc87944be594fbabb019105db79a05",
+      "size": 4228,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/web/c1-saved.test.cjs",
+      "rule": "tests",
+      "sha256": "bdbbf53241050d7bad89b17c0af9cd7b89f36986ac9b826883e4bd72a3c52889",
+      "size": 2499,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/web/contract.test.cjs",
+      "rule": "tests",
+      "sha256": "fe82f82829c32054d218215ead3288f51c2d2c5cacedb313ddd3f87383e8c789",
+      "size": 52607,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/web/dom.test.py",
+      "rule": "tests",
+      "sha256": "75b7041f0f2a825296cb08adb88948f6b484daf9d9a91eeb2e53e1d91970f286",
+      "size": 86694,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/web/p4-plain.test.cjs",
+      "rule": "tests",
+      "sha256": "4441e68c5c6c102d696f22774ba11e01b8d3b1039479159f1ddd044d02b69699",
+      "size": 1588,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "tests/web/test_connect_feedback.py",
+      "rule": "tests",
+      "sha256": "d93cb45be51277aeb3b3c2befed60ece630b34ccba80db8a02370c4d8bb862da",
+      "size": 4032,
+      "source": "repo"
+    }
+  ],
+  "generated_at_utc": "2026-11-08T22:06:42+00:00",
+  "generator": "build_public_release",
+  "license": {
+    "file_present": true,
+    "status": "present_unreviewed"
+  },
+  "links": {
+    "anchor_only_skipped": 0,
+    "external_skipped": 24,
+    "missing": [],
+    "ok": 15
+  },
+  "notes": [
+    "Public evidence reports are copied byte-for-byte; they are not re-signed or re-hashed.",
+    "Review candidate only; nothing here has been published."
+  ],
+  "package": "agent-backrooms-hackathon-20261108",
+  "python": "3.12.10",
+  "scan": {
+    "findings_not_blocking": [
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          132289
+        ],
+        "path": "docs/evidencia/external-sequence/run-ledger.json",
+        "rule": "generic_secret_assignment",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          60
+        ],
+        "path": "tests/backend/test_connect_external_gemini.py",
+        "rule": "generic_secret_assignment",
+        "severity": "block"
+      },
+      {
+        "count": 2,
+        "disposition": "warning",
+        "lines": [
+          40,
+          219
+        ],
+        "path": "tests/backend/test_ola4_validity.py",
+        "rule": "local_absolute_path",
+        "severity": "warning"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          18
+        ],
+        "path": "tests/backend/test_p5_configuration.py",
+        "rule": "generic_secret_assignment",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          34
+        ],
+        "path": "tests/evaluation/test_p4_batch.py",
+        "rule": "generic_secret_assignment",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          105
+        ],
+        "path": "tests/integration/actor_catalog_local.py",
+        "rule": "mountinfo_path",
+        "severity": "block"
+      },
+      {
+        "count": 6,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          93,
+          161,
+          227,
+          288,
+          325,
+          370
+        ],
+        "path": "tests/integration/test_actor_catalog_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          81
+        ],
+        "path": "tests/integration/test_actor_catalog_docker.py",
+        "rule": "mountinfo_path",
+        "severity": "block"
+      },
+      {
+        "count": 5,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          73,
+          147,
+          228,
+          305,
+          330
+        ],
+        "path": "tests/integration/test_actor_memory_service_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 3,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          38,
+          62,
+          96
+        ],
+        "path": "tests/integration/test_actor_network_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 3,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          98,
+          178,
+          264
+        ],
+        "path": "tests/integration/test_actor_persistence_service_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 2,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          42,
+          74
+        ],
+        "path": "tests/integration/test_actor_rooms_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          78
+        ],
+        "path": "tests/integration/test_actor_secret_service_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          72
+        ],
+        "path": "tests/integration/test_actor_workflow_missions_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          55
+        ],
+        "path": "tests/integration/test_d3_catalog_docker.py",
+        "rule": "mountinfo_path",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          75
+        ],
+        "path": "tests/integration/test_invoice_actor_service_docker.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          922
+        ],
+        "path": "tests/integration/test_sc2_actor_compatibility.py",
+        "rule": "bearer_token",
+        "severity": "block"
+      },
+      {
+        "count": 1,
+        "disposition": "allowed_allowlist",
+        "lines": [
+          4
+        ],
+        "path": "tests/web/c-next.test.cjs",
+        "rule": "mountinfo_path",
+        "severity": "block"
+      }
+    ],
+    "note": "Findings list path/rule/line only; values are never recorded.",
+    "rule_ids": [
+      "anthropic_key",
+      "aws_access_key",
+      "bearer_token",
+      "environment_gpg_key",
+      "generic_secret_assignment",
+      "github_token",
+      "google_api_key",
+      "jwt",
+      "local_absolute_path",
+      "mountinfo_path",
+      "openai_style_key",
+      "overlay_layer_details",
+      "password_hash",
+      "private_key_block",
+      "putty_private_key",
+      "slack_token",
+      "url_credentials"
+    ],
+    "scan_allow_sha256": "15abd64eb2723f299ae53b4ae2852ee73248de49a5f3b2fde0769f5637bff675"
+  },
+  "schema": 1,
+  "selection": {
+    "by_rule": {
+      "env_example": 1,
+      "evaluation_scripts": 11,
+      "external_connectors": 11,
+      "infra_public": 10,
+      "license": 1,
+      "public_evidence_reports": 6,
+      "public_release_docs": 4,
+      "python_requirements": 2,
+      "readme": 1,
+      "release_support": 4,
+      "services_agent": 60,
+      "slides": 1,
+      "state_backup_cli": 1,
+      "tests": 170,
+      "third_party_notices": 1,
+      "web_assets": 39
+    },
+    "excluded_by_rule": [
+      {
+        "path": "scripts/evaluation/d4_private_capture.py",
+        "reason": "private_ops_name",
+        "rule": "evaluation_scripts"
+      },
+      {
+        "path": "infra/p2/10-launch-setuid.conf",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/20-private-temp.conf",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/40-actor-private-rooms.conf",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/50-actor-room-agent.conf",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/README.md",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/boot/30-cold-host-start.conf",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/boot/README.md",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/boot/agent-escape-room-sc2.target",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "infra/p2/boot/controller-entry.sh",
+        "reason": "excluded_prefix",
+        "rule": "infra_public"
+      },
+      {
+        "path": "docs/release/LICENCIAS-PROCEDENCIA.md",
+        "reason": "not_in_allowlist",
+        "rule": "public_release_docs"
+      },
+      {
+        "path": "docs/release/LICENSE-PROPOSAL.txt",
+        "reason": "superseded",
+        "rule": "public_release_docs"
+      },
+      {
+        "path": "docs/release/MATRIZ-REQUISITO-EVIDENCIA.md",
+        "reason": "not_in_allowlist",
+        "rule": "public_release_docs"
+      },
+      {
+        "path": "docs/release/PUBLIC-DEPENDENCIES.json",
+        "reason": "not_in_allowlist",
+        "rule": "public_release_docs"
+      },
+      {
+        "path": "docs/release/PUBLIC-SCAN-ALLOW-C5.json",
+        "reason": "not_in_allowlist",
+        "rule": "public_release_docs"
+      }
+    ],
+    "files_selected": 323,
+    "link_violations": [],
+    "missing_required": [],
+    "optional_absent": [
+      {
+        "path": "services/__init__.py",
+        "rule": "pytest_support"
+      },
+      {
+        "path": "tests/__init__.py",
+        "rule": "pytest_support"
+      },
+      {
+        "path": "tests/conftest.py",
+        "rule": "pytest_support"
+      },
+      {
+        "path": "pytest.ini",
+        "rule": "pytest_support"
+      },
+      {
+        "path": "conftest.py",
+        "rule": "pytest_support"
+      }
+    ],
+    "overrides": {
+      "README.md": "docs/entrega/README-PUBLIC-EN.md",
+      "scripts/evaluation/README.md": "docs/entrega/README-EVALUACION-PAQUETE.md"
+    },
+    "oversize": [],
+    "pruned_dirs": {
+      "__pycache__": 6
+    },
+    "skipped_by_suffix": {
+      "infra_public:(none)": 1,
+      "infra_public:.conf": 1,
+      "infra_public:.sh": 1,
+      "infra_public:.toml": 1,
+      "infra_public:.txt": 1,
+      "services_agent:(none)": 1,
+      "tests:.ps1": 1,
+      "tests:.sh": 1,
+      "web_assets:(none)": 1
+    },
+    "unreadable": []
+  },
+  "status": "review_candidate_not_published"
+}

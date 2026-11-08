@@ -1,0 +1,26 @@
+[Unit]
+Description=Agent Backrooms independent durable verifier (prepared, not installed)
+After=docker.service
+Requires=docker.service
+
+[Service]
+User=65532
+Group=65534
+SupplementaryGroups=docker
+RuntimeDirectory=agent-escape-room-sc2-guard
+RuntimeDirectoryMode=2750
+RuntimeDirectoryPreserve=yes
+Type=simple
+WorkingDirectory=/opt/agent-escape-room/sc2-current
+Environment=PYTHONDONTWRITEBYTECODE=1
+EnvironmentFile=/etc/agent-escape-room-sc2-owner.env
+NoNewPrivileges=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+UMask=0077
+ProtectSystem=strict
+ProtectHome=true
+Restart=no
+TimeoutStopSec=45
+ReadWritePaths=/var/lib/agent-escape-room-sc2/guard /run/agent-escape-room-sc2-guard
+ExecStart=/opt/agent-escape-room/venv/bin/python -B -m services.agent.daemon_guard --socket /run/agent-escape-room-sc2-guard/service.sock --client-uid 65534 --socket-group 65534 --image ${AER_IMAGE_ID} --state-dir /var/lib/agent-escape-room-sc2/guard

@@ -1,0 +1,13 @@
+{
+  "semantic_status": "accepted_generated_prose_metadata_normalized",
+  "reviewer": "Sol: original bridge events, supplied public transcript and selected observable client context",
+  "main_notes": [],
+  "notes": [
+    "Importación autenticada de un recorrido local WSL/Docker. No es una ejecución nativa en Vultr ni atestación del modelo del cliente. El intérprete sí se ejecutó en Vultr.",
+    "El contexto observable seleccionado no contiene 1500 ni 2750 antes del comando que los escribe. Esto no revela pensamiento privado, memoria ni contexto completo del proveedor. La procedencia de esos valores sigue sin establecerse.",
+    "Las facturas no incluyen precios unitarios. 2000 + 750 suma 2750 sólo si ambas facturas se aceptan; la entrada no determina el 1500. El fixture y su respuesta esperada repiten un ejemplo histórico público: riesgo de contaminación, sin lectura causal observada.",
+    "Cuatro generaciones del mismo registro conservadas: v7 JSON inválido; v8 aceptada con inferencia de cálculo excesiva; v9 malformada y length; v10 JSON válido, stop y 607 tokens, prosa generada que distingue escritura de constantes y cálculo no observado. No se repitió la tarea humana.",
+    "La v10 omitió task_status en su copia del dictamen: el parser v4 restituye sólo metadatos omitidos desde la evidencia autoritaria, con iguales identidades y sin valores contradictorios. Prosa y citas generadas intactas; recibo y fallo original conservados. Esta revalidación no llamó al modelo.",
+    "La explicación actual está generada en Vultr; estas notas documentan procedencia y normalización, no sustituyen su aclaración por un parche editorial. Comprensión humana pendiente."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "observation-review/v1",
+  "applies_to_prompt_versions": ["evidence-es/v13-catalog-request-outcomes"],
+  "run_id": "3f40244d23494b51b399a72bb84d256a",
+  "semantic_status": "core_facts_corrected_scope_notes_required",
+  "source": "Technical review by Sol, 7 November 2026; separate from generated prose",
+  "main_notes": [
+    {
+      "text": "Hubo dos solicitudes al catálogo: una denegada y una exitosa después del permiso del operador. Los precios devueltos coinciden con los del programa. Esto acredita datos observados y coincidencia de valores; los enlaces con las invitaciones no demuestran por qué actuó el agente ni qué comprendió.",
+      "event_ids": ["e161", "e163", "e167", "e169", "e172", "e173", "e174"]
+    },
+    {
+      "text": "Las muestras de red registraron cero conexiones en esos instantes, antes y después de dos comandos. La frase de la explicación sobre red no acredita ausencia de comunicaciones durante toda la ejecución: no se observó de forma continua el intervalo entre muestras.",
+      "event_ids": ["e155", "e156", "e176", "e177"]
+    }
+  ],
+  "notes": [
+    "La proyección anterior omitía las salidas completas del catálogo y de la conciliación. La revisión añade exclusivamente datos JSON sintéticos tipados, conserva los 47 eventos y no modifica el original importado.",
+    "La generación inicial v11 y la primera corrección v12 se conservan. V12 todavía confundía dos solicitudes con dos denegaciones. V13 usa el resumen calculado de acceso; no se editaron las respuestas generadas.",
+    "La discrepancia observada es 643584 frente a 643567 centavos, diferencia de17. El archivo esperado incluye esa discrepancia; task_status=passed proviene de la comprobación fija del propio sistema, no de un verificador independiente. La importación de operador no atesta origen remoto ni aislamiento del equipo del cliente."
+  ]
+}

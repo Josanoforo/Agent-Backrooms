@@ -1,0 +1,9 @@
+{$ESCAPE_DOMAIN} {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy no-referrer
+        X-Frame-Options DENY
+    }
+    reverse_proxy 127.0.0.1:8000
+}
