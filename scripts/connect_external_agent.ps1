@@ -6,7 +6,7 @@ param(
     [ValidateSet('workflow,processes')][string]$Journey,
     [string]$ScenarioId,
     [ValidateRange(1,600)][int]$CommandSeconds=60,
-    # Rehearsal limits (provisional bounds, docs/mesas/RELEVO-CLAUDE-2026-11-07.md). Container profile is never widened.
+    # Rehearsal limits (provisional bounds). Container profile is never widened.
     # Omitted values keep each connector's own default (Claude and Ollama 64/64, Codex 32/32; lease 3600; MCP max(180, CommandSeconds+120)).
     [ValidateRange(1,256)][int]$MaxCommands,
     [ValidateRange(1,256)][int]$MaxPolicyRequests,

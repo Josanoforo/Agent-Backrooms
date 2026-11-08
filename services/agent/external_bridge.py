@@ -31,7 +31,7 @@ COVERAGE = {
 # runner.ordinary_create_args and is never widened by any of these values.
 # Reaching a limit is recorded as a rehearsal limit, never as agent conduct.
 # Values adopted from docs/arquitectura/LIMITES-DECISION-2026-11-07.md (7 Nov 2026, 20:51 CDMX),
-# which confirmed the provisional ceilings of docs/mesas/RELEVO-CLAUDE-2026-11-07.md.
+# which confirmed the earlier provisional ceilings.
 LIMIT_BOUNDS = {
     'max_commands': (1, 256, 8),           # dispatched commands; bridge default 8, launchers Claude/Ollama 64
     'max_policy_requests': (1, 256, 32),   # additional policy/validation requests; launchers 64

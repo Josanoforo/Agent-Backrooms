@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run a declared campaign of external-agent cells through the existing connectors.
 
-Contract (docs/arquitectura/LIMITES-DECISION-2026-11-07.md, decision 4; docs/mesas/RELEVO-CLAUDE-2026-11-07.md):
+Contract (docs/arquitectura/LIMITES-DECISION-2026-11-07.md, decision 4):
 - generates one single-use session per repetition (camp-<yyyymmdd>-<client>-<room>-<cell>-r<n>); a name that
   already exists is an error for that cell, never a reuse;
 - always launches with --allow-room-tools (room MCP tools only), --observe-state all, scenario 'invitation' unless the
@@ -286,7 +286,7 @@ def operator_session_live(base, run_id=None):
 
 
 def plan_grant_watcher(job, base, stop, outcome, plan_sha256, campaign):
-    """Operator-less granted-permission path (Central, 7 Nov): the grant declared in the plan is applied by the
+    """Operator-less granted-permission path (maintainer, 7 Nov): the grant declared in the plan is applied by the
     launcher only after the controller has denied the agent's first catalog request, bound to that run_id and
     recorded as operator_pre_authorized_in_plan. Agent text never grants anything; this thread never reads it."""
     outcome.update({'armed': True, 'origin': GRANT_ORIGIN, 'state': 'armed_waiting_for_admission', 'run_id': None, 'denied_request_id': None, 'applied_at': None})

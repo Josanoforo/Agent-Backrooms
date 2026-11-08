@@ -26,7 +26,7 @@ uncertain (timeout, runtime failure, invalid output) invalidates the lease and l
 A cancelled or disconnected client changes nothing: the owner keeps the obligation until the runtime confirms absence. TTL is
 absolute from open (120 s in M1). health is read-only and separate from close.
 
-Durable receipt query (`receipt`, decision of Central after A3): the peer UID read from the socket is the only controller UID the
+Durable receipt query (`receipt`, maintainer decision after A3): the peer UID read from the socket is the only controller UID the
 diary is asked about; the installation in the request must be this owner's. The answer comes from `inventory.receipt(
 controller_uid=, run_id=, variant=, intent_id=, container_id=)`, which returns the exact FINISH intent or None and raises with a
 closed `.code` otherwise. `confirmed` needs that FINISH and the owner re-checks every field of it; a valid identity without it is

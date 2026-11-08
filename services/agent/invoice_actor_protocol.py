@@ -14,7 +14,7 @@ Scope and limits (read before wiring a transport):
   reopening until the owner confirms cleanup. Durable recovery after a crash is another lane and is NOT simulated here: the
   registry is in memory and a restart loses it.
 - retire() and pending_cleanup() belong to the trusted owner; the transport must never map a peer request to them.
-- `receipt` (durable restitution query, decision of Central after A3) is the sixth operation. It carries exactly installation_id,
+- `receipt` (durable restitution query, maintainer decision after A3) is the sixth operation. It carries exactly installation_id,
   run_id, variant, intent_id and container_id, with the identity bounds of M1 (32/32/closed/32/64 lowercase hex), and no handle:
   it is answered from the durable diary alone, never from this registry. The other five operations keep their fields.
 - Mapping of workflow steps (input preparation, canary probe, final probes) to these operations is NOT defined here and must

@@ -8,7 +8,7 @@ Este documento resume qué está registrado sobre el origen del código, las dep
 
 ## Reutilización de código previo
 
-El registro de reutilización (`docs/reutilizacion/REGISTRO.md`; no se enlaza desde aquí porque cita rutas locales y debe sanearse antes de publicarse) no lista piezas integradas: su tabla de origen/licencia/archivos copiados está vacía y solo contiene candidatos de búsqueda sin verificar. Eso es lo que el registro dice; **no es una verificación independiente de que no se copió nada**. Central debe confirmar de forma explícita si hubo alguna incorporación. Si la hubo, antes de publicar hay que registrar origen, commit, licencia, archivos y modificaciones. El dossier del evento deja sin aclarar cuánto núcleo agentivo previo se admite; no se interpreta ni como permiso ni como prohibición. Según el plan de olas y los cierres registrados, el núcleo de este producto (niveles, oráculos, runner, reportes, uso y recuperación) se desarrolló durante la ventana del evento a partir del 3 de noviembre de 2026; esa afirmación depende de la confirmación pendiente descrita arriba.
+El registro de reutilización (`docs/reutilizacion/REGISTRO.md`; no se enlaza desde aquí porque cita rutas locales y debe sanearse antes de publicarse) no lista piezas integradas: su tabla de origen/licencia/archivos copiados está vacía y solo contiene candidatos de búsqueda sin verificar. Eso es lo que el registro dice; **no es una verificación independiente de que no se copió nada**. El mantenedor debe confirmar de forma explícita si hubo alguna incorporación. Si la hubo, antes de publicar hay que registrar origen, commit, licencia, archivos y modificaciones. El dossier del evento deja sin aclarar cuánto núcleo agentivo previo se admite; no se interpreta ni como permiso ni como prohibición. Según el plan de olas y los cierres registrados, el núcleo de este producto (niveles, oráculos, runner, reportes, uso y recuperación) se desarrolló durante la ventana del evento a partir del 3 de noviembre de 2026; esa afirmación depende de la confirmación pendiente descrita arriba.
 
 ## Dependencias
 
@@ -29,7 +29,7 @@ El producto llama al modelo configurado por Vultr Serverless Inference en un end
 
 ## Asistentes de programación
 
-El desarrollo se apoyó en asistentes de programación, entre ellos agentes Claude, con integración y pruebas a cargo de central. No forman parte del producto en ejecución: el producto no llama a ningún proveedor de modelos distinto de Vultr Serverless Inference. El dossier no localizó una prohibición ni una lista blanca explícita; esto no es aprobación nominal del organizador. La declaración final dependerá de lo que pida el formulario del evento, que prevalece.
+El desarrollo se apoyó en asistentes de programación, entre ellos agentes Claude, con integración y pruebas a cargo del mantenedor. No forman parte del producto en ejecución: el producto no llama a ningún proveedor de modelos distinto de Vultr Serverless Inference. El dossier no localizó una prohibición ni una lista blanca explícita; esto no es aprobación nominal del organizador. La declaración final dependerá de lo que pida el formulario del evento, que prevalece.
 
 ## Evidencia pública de la release
 
@@ -55,7 +55,7 @@ Huella combinada del protocolo de estas corridas: `55809a797b345b8c8881c81708dc0
 | Web | 41 aprobadas (19 de contrato, 22 de navegador) | Suite de interfaz con API simulada |
 | Corridas reales | 2, nivel `secret`, `glm-5.3-flash`, 4 llamadas | Única evidencia con inferencia real en este lote |
 
-Son resultados registrados por central; este documento no los reprodujo.
+Son resultados registrados por el mantenedor; este documento no los reprodujo.
 
 ## Qué no se afirma
 
@@ -63,7 +63,7 @@ No se afirma certificación de seguridad, certificación legal, ahorro medido fr
 
 ## Material de entrega y fuente oficial
 
-Guía de entrega consultada por central (revalidada, no repetida aquí): <https://lablab.ai/delivering-your-hackathon-solution>. Según ese resumen: presentación en PDF, vídeo en MP4 o MOV de hasta 300 MB, recomendación de menos de cinco minutos; **el formulario del evento prevalece** sobre cualquier guía general. Diapositivas, portada y video generados localmente. Los archivos locales no equivalen a publicación o envío. El material de terceros (música, tipografías, voz, plantillas, logotipos incluido el de Vultr) debe tener licencia o permiso; preferir material propio.
+Guía de entrega consultada por el mantenedor (revalidada, no repetida aquí): <https://lablab.ai/delivering-your-hackathon-solution>. Según ese resumen: presentación en PDF, vídeo en MP4 o MOV de hasta 300 MB, recomendación de menos de cinco minutos; **el formulario del evento prevalece** sobre cualquier guía general. Diapositivas, portada y video generados localmente. Los archivos locales no equivalen a publicación o envío. El material de terceros (música, tipografías, voz, plantillas, logotipos incluido el de Vultr) debe tener licencia o permiso; preferir material propio.
 
 ## Pendientes
 

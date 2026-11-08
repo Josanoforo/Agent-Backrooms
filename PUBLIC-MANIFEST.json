@@ -1,5 +1,5 @@
 {
-  "content_digest_sha256": "56d2bda4a148f10bc9f550212aef7747559f4d390ac565d86dbed1628880eaf5",
+  "content_digest_sha256": "cde812d5690b0bd54367894cd25fd409e44d6635c7991a9e65488f0d7c9a6d1d",
   "evidence_mode": "always",
   "file_count": 324,
   "files": [
@@ -10,6 +10,14 @@
       "sha256": "5506eb90d5f4697f44c914c553921ce4451d8d0d25de6a264257236c33c8abc6",
       "size": 1062,
       "source": "repo"
+    },
+    {
+      "byte_identical_to_source": null,
+      "path": ".gitattributes",
+      "rule": "generated_gitattributes",
+      "sha256": "77a60910c40919ae3efef0f19cf993f317e40c56f453944eae183418e9e082bf",
+      "size": 79,
+      "source": "generated"
     },
     {
       "byte_identical_to_source": null,
@@ -453,19 +461,11 @@
     },
     {
       "byte_identical_to_source": true,
-      "path": "docs/release/PUBLIC-PACKAGE.md",
-      "rule": "public_release_docs",
-      "sha256": "39435dd9c42de8c448984774ce86111868b2316d47e9d112513e6c6c4b6b15cd",
-      "size": 11808,
-      "source": "repo"
-    },
-    {
-      "byte_identical_to_source": true,
       "path": "docs/release/PUBLIC-PROVENANCE.md",
       "rule": "public_release_docs",
-      "sha256": "b2cfad88697db44388cf37107e0475c9455966d8840bab49ab8aaadb0e1f791e",
-      "size": 7897,
-      "source": "repo"
+      "sha256": "17f1fde4f5461df599074cc1bb1cc307beefc9d1f7b2fa61ecc394a63cab5bdf",
+      "size": 7919,
+      "source": "override:docs/entrega/PUBLIC-PROVENANCE-PAQUETE.md"
     },
     {
       "byte_identical_to_source": true,
@@ -583,16 +583,16 @@
       "byte_identical_to_source": true,
       "path": "scripts/build_public_release.py",
       "rule": "release_support",
-      "sha256": "127570bd0762ab3b0bdec6aeb23a99f57d086e88f9490a455824fc535cbfa9fc",
-      "size": 51787,
+      "sha256": "6fb494595abc86ae661f562b4822311a5e071c09e5e6b434432b037b1a308a1b",
+      "size": 52559,
       "source": "repo"
     },
     {
       "byte_identical_to_source": true,
       "path": "scripts/connect_external_agent.ps1",
       "rule": "external_connectors",
-      "sha256": "c656bc8c89d7f8c90335265a060fba982c28728e8a4bcd0ce469e6807e50fd09",
-      "size": 3977,
+      "sha256": "d6609fadbb4b300199618cbb7c68f5dac54c3d5bc6039a01cd1c3cbcc77f001f",
+      "size": 3937,
       "source": "repo"
     },
     {
@@ -751,8 +751,8 @@
       "byte_identical_to_source": true,
       "path": "scripts/run_external_campaign.py",
       "rule": "external_connectors",
-      "sha256": "5e2399fc7e5a5ca05ff3679eec8f5006915f0e0edfb96d66446ce31b7ec3d40d",
-      "size": 37726,
+      "sha256": "45f45636c99d55634f8f26a02e7dc58358e9cc902e5bc4193950cadbbd418ac6",
+      "size": 37689,
       "source": "repo"
     },
     {
@@ -911,8 +911,8 @@
       "byte_identical_to_source": true,
       "path": "services/agent/external_bridge.py",
       "rule": "services_agent",
-      "sha256": "1a651b53b9b744dd570080ed572af89e22eeba064ba69ae0144ccc7887070888",
-      "size": 63088,
+      "sha256": "f4fa8463883207e8fa9a404427358fa084c1a188eb033b8896e6f11a1e8d7752",
+      "size": 63054,
       "source": "repo"
     },
     {
@@ -999,8 +999,8 @@
       "byte_identical_to_source": true,
       "path": "services/agent/gemini_mcp_client.py",
       "rule": "services_agent",
-      "sha256": "3a42b3515633e442aba7b88a68994b5a7859d2fb90ff8841a230400ab13b00a6",
-      "size": 32645,
+      "sha256": "e383e408bb698307c847bded5b83c30ab43ee18380c7dab0d086b4637559e3df",
+      "size": 32659,
       "source": "repo"
     },
     {
@@ -1031,7 +1031,7 @@
       "byte_identical_to_source": true,
       "path": "services/agent/invoice_actor_broker.py",
       "rule": "services_agent",
-      "sha256": "c5633377307637add5cac581bdc63f860c2404b00a1a75a0f0189822f8d7da58",
+      "sha256": "571320a01cb37bba2de6fd609d33106c03c18ef3ec3c6f00bbf5de3afba5243d",
       "size": 98724,
       "source": "repo"
     },
@@ -1047,7 +1047,7 @@
       "byte_identical_to_source": true,
       "path": "services/agent/invoice_actor_protocol.py",
       "rule": "services_agent",
-      "sha256": "f27034a8cfcd8ea44a495c9bdbee0c41850c50d4aabbf729e49dd76f9d7a00fb",
+      "sha256": "7129c20979e618d52b8b85b6db6ad1b7127a7842877a411a97da5d685047a655",
       "size": 36383,
       "source": "repo"
     },
@@ -2596,7 +2596,7 @@
       "source": "repo"
     }
   ],
-  "generated_at_utc": "2026-11-08T22:06:42+00:00",
+  "generated_at_utc": "2026-11-08T22:19:07+00:00",
   "generator": "build_public_release",
   "license": {
     "file_present": true,
@@ -2843,7 +2843,7 @@
       "infra_public": 10,
       "license": 1,
       "public_evidence_reports": 6,
-      "public_release_docs": 4,
+      "public_release_docs": 3,
       "python_requirements": 2,
       "readme": 1,
       "release_support": 4,
@@ -2926,12 +2926,17 @@
         "rule": "public_release_docs"
       },
       {
+        "path": "docs/release/PUBLIC-PACKAGE.md",
+        "reason": "not_in_allowlist",
+        "rule": "public_release_docs"
+      },
+      {
         "path": "docs/release/PUBLIC-SCAN-ALLOW-C5.json",
         "reason": "not_in_allowlist",
         "rule": "public_release_docs"
       }
     ],
-    "files_selected": 323,
+    "files_selected": 322,
     "link_violations": [],
     "missing_required": [],
     "optional_absent": [
@@ -2958,6 +2963,7 @@
     ],
     "overrides": {
       "README.md": "docs/entrega/README-PUBLIC-EN.md",
+      "docs/release/PUBLIC-PROVENANCE.md": "docs/entrega/PUBLIC-PROVENANCE-PAQUETE.md",
       "scripts/evaluation/README.md": "docs/entrega/README-EVALUACION-PAQUETE.md"
     },
     "oversize": [],

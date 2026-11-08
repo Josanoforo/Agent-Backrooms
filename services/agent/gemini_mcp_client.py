@@ -27,7 +27,7 @@ from services.agent.ollama_mcp_client import ClientError, MCPProcess
 
 DEFAULT_BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/openai/'
 KEY_ENV = 'GEMINI_API_KEY'
-# Dated list prices (USD per million tokens) recorded by Central on 2026-11-08 from Gemini docs; always an estimate.
+# Dated list prices (USD per million tokens) recorded by the maintainer on 2026-11-08 from Gemini docs; always an estimate.
 PRICES_USD_PER_MTOK = {
     'gemini-3.5-flash-lite': {'input': 0.30, 'output': 2.50},
     'gemini-3.6-flash': {'input': 0.75, 'output': 3.75},
@@ -327,7 +327,7 @@ class GeminiMCPClient:
 
 # ------------------------------------------------------------------------------------------------------------
 # Vertex AI express mode: native generateContent with functionDeclarations / functionCall / functionResponse.
-# Endpoint verified by Central on 2026-11-08 (HTTP 200 with x-goog-api-key for gemini-3.5-flash-lite).
+# Endpoint verified by the maintainer on 2026-11-08 (HTTP 200 with x-goog-api-key for gemini-3.5-flash-lite).
 VERTEX_EXPRESS_BASE_URL = 'https://aiplatform.googleapis.com/v1/publishers/google/models/'
 _SCHEMA_KEYS = {'type', 'description', 'enum', 'properties', 'required', 'items', 'format', 'nullable',
                 'minLength', 'maxLength', 'minimum', 'maximum', 'minItems', 'maxItems'}
