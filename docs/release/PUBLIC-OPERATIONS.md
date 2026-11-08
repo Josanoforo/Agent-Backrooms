@@ -72,7 +72,7 @@ python -m pytest tests/backend tests/integration tests/evaluation -q
 
 Las pruebas con Docker real requieren activación explícita (`ESCAPE_RUN_DOCKER_SMOKE=1`) y la imagen indicada en `ESCAPE_DOCKER_IMAGE`; sin ella se omiten. Sus proveedores son simulados, no inferencia real. La suite web se ejecuta con Node y Python/Playwright mediante los comandos del README.
 
-Resultados registrados para esta release: 380 pruebas Python aprobadas en Linux, 14 de ellas con Docker real; 41 pruebas web aprobadas (19 de contrato y 22 de navegador). Son registros de la ejecución de central; este documento no las repite.
+Resultados registrados para esta release: 380 pruebas Python aprobadas en Linux, 14 de ellas con Docker real; 41 pruebas web aprobadas (19 de contrato y 22 de navegador). Son registros de la ejecución del mantenedor; este documento no las repite.
 
 ## Presupuesto operativo y límites de uso
 

@@ -1,7 +1,7 @@
 {
-  "content_digest_sha256": "cde812d5690b0bd54367894cd25fd409e44d6635c7991a9e65488f0d7c9a6d1d",
+  "content_digest_sha256": "84f02d859ab2c7b75cab9f288015765fbee7442ea5ac2a4512e24f9266bb0007",
   "evidence_mode": "always",
-  "file_count": 324,
+  "file_count": 326,
   "files": [
     {
       "byte_identical_to_source": true,
@@ -39,8 +39,8 @@
       "byte_identical_to_source": true,
       "path": "README.md",
       "rule": "readme",
-      "sha256": "0e1b248663de0835dea4d3e4f7f5419ada02d01cbd684e3c579d0098d2b08fa6",
-      "size": 6141,
+      "sha256": "fb37c8dabf56facec23bbe47c83b7fcfface9e43db32e6fc251346c2cfb7dcaf",
+      "size": 6532,
       "source": "override:docs/entrega/README-PUBLIC-EN.md"
     },
     {
@@ -87,16 +87,16 @@
       "byte_identical_to_source": true,
       "path": "apps/web/connect.html",
       "rule": "web_assets",
-      "sha256": "a8851b518fccabd10504f3fcce36ad9a6df601704dc3957243ddcc2974f6ab0d",
-      "size": 5940,
+      "sha256": "42327eeb38870205631043e5723dbf383a6d50beffccb0b11e0648164f6ca140",
+      "size": 5937,
       "source": "repo"
     },
     {
       "byte_identical_to_source": true,
       "path": "apps/web/connect.js",
       "rule": "web_assets",
-      "sha256": "a46795337ac88e89e91b54beb9539fd7b8a7bab723ccdbfd896171a4c7a02a06",
-      "size": 11162,
+      "sha256": "243a8623fbb61181a53ef91657d4bb7a853d924b9794f9cab47d0b3c2339b36b",
+      "size": 12124,
       "source": "repo"
     },
     {
@@ -309,6 +309,14 @@
     },
     {
       "byte_identical_to_source": true,
+      "path": "apps/web/evidence/rooms-agent/explanation-en.json",
+      "rule": "web_assets",
+      "sha256": "bf2b17bc8aef6581010bdcd7b29e1fed9a2388c6c2e14920c48b3538aa88a7da",
+      "size": 3992,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
       "path": "apps/web/evidence/rooms-agent/index.json",
       "rule": "web_assets",
       "sha256": "7627eb7ee39cae306d2118bc93fa9d54044243a1024ce96f29824a438fbaf881",
@@ -321,6 +329,14 @@
       "rule": "web_assets",
       "sha256": "410b08bf464d75d57e971df4e654a8aa7281d8742271c806e658120d9959e682",
       "size": 3178,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
+      "path": "apps/web/evidence/rooms-agent/results.txt",
+      "rule": "web_assets",
+      "sha256": "1b866a91cc00e521c0e041c63e5cf2c8c3349ce279337c02ea0ab71cfb25614c",
+      "size": 3004,
       "source": "repo"
     },
     {
@@ -455,9 +471,9 @@
       "byte_identical_to_source": true,
       "path": "docs/release/PUBLIC-OPERATIONS.md",
       "rule": "public_release_docs",
-      "sha256": "050b3f2eb58c23086e360fc93387769712de41701608da668eda2ff0d259e31d",
-      "size": 8959,
-      "source": "repo"
+      "sha256": "2a4bb3d1eba0d28628a12e69424ef525c9f9facd9c7a6ffce32495767f656e35",
+      "size": 8963,
+      "source": "override:docs/entrega/PUBLIC-OPERATIONS-PAQUETE.md"
     },
     {
       "byte_identical_to_source": true,
@@ -583,8 +599,8 @@
       "byte_identical_to_source": true,
       "path": "scripts/build_public_release.py",
       "rule": "release_support",
-      "sha256": "6fb494595abc86ae661f562b4822311a5e071c09e5e6b434432b037b1a308a1b",
-      "size": 52559,
+      "sha256": "21e45457d7b800d44d14d9d0e3d4031e580d077541d6515babd488b04ec5efb1",
+      "size": 53333,
       "source": "repo"
     },
     {
@@ -2596,7 +2612,7 @@
       "source": "repo"
     }
   ],
-  "generated_at_utc": "2026-11-08T22:19:07+00:00",
+  "generated_at_utc": "2026-11-08T22:29:30+00:00",
   "generator": "build_public_release",
   "license": {
     "file_present": true,
@@ -2852,7 +2868,7 @@
       "state_backup_cli": 1,
       "tests": 170,
       "third_party_notices": 1,
-      "web_assets": 39
+      "web_assets": 41
     },
     "excluded_by_rule": [
       {
@@ -2936,7 +2952,7 @@
         "rule": "public_release_docs"
       }
     ],
-    "files_selected": 322,
+    "files_selected": 324,
     "link_violations": [],
     "missing_required": [],
     "optional_absent": [
@@ -2963,6 +2979,7 @@
     ],
     "overrides": {
       "README.md": "docs/entrega/README-PUBLIC-EN.md",
+      "docs/release/PUBLIC-OPERATIONS.md": "docs/entrega/PUBLIC-OPERATIONS-PAQUETE.md",
       "docs/release/PUBLIC-PROVENANCE.md": "docs/entrega/PUBLIC-PROVENANCE-PAQUETE.md",
       "scripts/evaluation/README.md": "docs/entrega/README-EVALUACION-PAQUETE.md"
     },
@@ -2981,7 +2998,8 @@
       "tests:.sh": 1,
       "web_assets:(none)": 1
     },
-    "unreadable": []
+    "unreadable": [],
+    "withheld": []
   },
   "status": "review_candidate_not_published"
 }

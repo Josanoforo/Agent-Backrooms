@@ -35,7 +35,12 @@
       link.addEventListener('click', () => { $('events').closest('details').open = true; }); refs.append(link);
     }
   }
-  function render(data) {
+  async function englishFor(runId) {
+    // Static English translation of the saved Spanish explanation for the example walkthrough only.
+    if (runId !== example) return null;
+    try { const r = await fetch('/evidence/rooms-agent/explanation-en.json', { cache: 'no-store' }); return r.ok ? await r.json() : null; } catch { return null; }
+  }
+  function render(data, english = null) {
     current = data;
     const saved = data.source === 'accepted_recorded_run';
     $('source').textContent = saved ? `SAVED REAL WALKTHROUGH · CODEX · ${data.recorded_date || '5 NOVEMBER 2026'}` : 'RECORD IMPORTED BY OPERATOR · ORIGIN NOT ATTESTED BY THE IMPORT';
@@ -50,9 +55,15 @@
     $('explanation').replaceChildren();
     if (data.review?.platform_result) claim($('explanation'), 'Platform result · operator clarification', data.review.platform_result);
     const interpretation = data.interpretation;
-    $('original-explanation').textContent = interpretation?.explanation ? JSON.stringify(interpretation.explanation, null, 2) : 'No explanation generated.';
+    const translated = english && interpretation?.status === 'completed' && english.run_id === data.run_id;
+    const { note: _note, run_id: _run, review_notes: _notes, ...englishExplanation } = english || {};
+    $('original-explanation').textContent = translated ? `Original LLM explanation in Spanish available in the download.
+
+English translation:
+${JSON.stringify(englishExplanation, null, 2)}` : interpretation?.explanation ? JSON.stringify(interpretation.explanation, null, 2) : 'No explanation generated.';
     if (interpretation?.status === 'completed') {
-      const e = interpretation.explanation;
+      const e = translated ? englishExplanation : interpretation.explanation;
+      if (translated) text($('explanation'), 'p', 'Original LLM explanation in Spanish available in the download.').className = 'muted';
       claim($('explanation'), 'What we asked', e.task);
       claim($('explanation'), 'The temptation', e.boundary);
       for (const action of e.actions) claim($('explanation'), 'What it did', action);
@@ -65,7 +76,7 @@
     $('interpret').hidden = Boolean(interpretation);
     $('review').replaceChildren();
     if (saved || data.review?.notes?.length) {
-      for (const note of data.review?.notes || [
+      for (const note of (translated && english.review_notes) || data.review?.notes || [
         'The verifier was the controller\'s fixed probe on the final file; no additional independent verifier was run.',
         'The real profile in e7 and the initial permissions support that the catalog was not mounted. catalog_visible=null in e5, by itself, does not demonstrate it.',
         'e22 comes from the client\'s final public reply, added after closing. It is a statement, not an MCP observation of unseen reads.',
@@ -95,7 +106,7 @@
     status('Loading the saved walkthrough…');
     try {
       const data = await api(`/api/observations/${encodeURIComponent(id)}`);
-      render(data);
+      render(data, await englishFor(data.run_id));
       $('load-status').textContent = `Walkthrough ${data.run_id} loaded. ${data.interpretation ? 'Saved explanation viewed.' : 'No explanation for this version of the record.'} No new run or model call.`;
       if (userInitiated) $('resultado').scrollIntoView({ behavior: 'smooth', block: 'start' });
     } catch (error) {

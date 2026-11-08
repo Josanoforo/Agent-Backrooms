@@ -125,7 +125,7 @@ EVIDENCE_FILES = (
     'docs/evidencia/ola3/report.json',
     'docs/evidencia/ola1-live-cierre/report.json',
     # External-agent ledger cited by the public README (216 runs), with its run tables
-    # and per-run causes (added 8 Nov 2026 at Central's request; RUNS.md left out: it links unpublished traces).
+    # and per-run causes (added 8 Nov 2026; RUNS.md left out: it links unpublished traces).
     'docs/evidencia/external-sequence/run-ledger.json',
     'docs/evidencia/external-sequence/CAUSAS-POR-CORRIDA-2026-11-08.md',
 )
@@ -303,6 +303,7 @@ class Ctx:
         self.oversize = []
         self.unreadable = []
         self.sources = {}  # package path -> repo path, when --override replaces the default source
+        self.withheld = []  # package paths removed by --withhold (selected by a rule, deliberately not shipped)
 
     def count_skip(self, rule_id, rel):
         key = '%s:%s' % (rule_id, _suffix(rel) or '(none)')
@@ -401,6 +402,16 @@ def collect(ctx):
             if count < rule.get('min_per_root', 0):
                 ctx.missing_required.append({'path': root + '/', 'rule': rule['id'],
                                              'reason': 'fewer than %d allowlisted files' % rule['min_per_root']})
+
+
+def apply_withholds(ctx, paths):
+    """--withhold PKG: do not ship an already-selected path (e.g. a web file not yet deployed)."""
+    for pkg in paths or ():
+        pkg = pkg.strip().replace('\\', '/')
+        if pkg not in ctx.selected:
+            raise ValueError('withhold target is not selected by any rule: %s' % pkg)
+        del ctx.selected[pkg]
+        ctx.withheld.append(pkg)
 
 
 def apply_overrides(ctx, specs):
@@ -896,6 +907,7 @@ def summarize_selection(ctx):
         'oversize': ctx.oversize,
         'unreadable': ctx.unreadable,
         'overrides': dict(sorted(ctx.sources.items())),
+        'withheld': sorted(ctx.withheld),
     }
 
 
@@ -915,6 +927,7 @@ def selection_problems(ctx):
 def cmd_plan(args):
     ctx = Ctx(args.evidence)
     collect(ctx)
+    apply_withholds(ctx, args.withhold)
     apply_overrides(ctx, args.override)
     allow, allow_hash = load_scan_allow(args.scan_allow)
     items = [(rel, source_of(ctx, rel)) for rel in sorted(ctx.selected)]
@@ -954,6 +967,7 @@ def cmd_build(args):
 
     ctx = Ctx(args.evidence)
     collect(ctx)
+    apply_withholds(ctx, args.withhold)
     apply_overrides(ctx, args.override)
     problems = selection_problems(ctx)
     base = {'command': 'build', 'target': dest.name, 'zip': zip_path.name,
@@ -1108,6 +1122,8 @@ def build_parser():
         p.add_argument('--strict-links', action='store_true', help='treat missing relative links as blocking')
         p.add_argument('--override', action='append', metavar='PKG=SRC',
                        help='ship repo file SRC at package path PKG (PKG must be selected by a rule); repeatable')
+        p.add_argument('--withhold', action='append', metavar='PKG',
+                       help='do not ship package path PKG although a rule selects it; repeatable')
 
     plan = sub.add_parser('plan', help='dry run')
     common(plan)
