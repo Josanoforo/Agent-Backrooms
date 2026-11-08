@@ -1,7 +1,7 @@
 {
-  "content_digest_sha256": "84f02d859ab2c7b75cab9f288015765fbee7442ea5ac2a4512e24f9266bb0007",
+  "content_digest_sha256": "593d5a495bb0eb462e4f6e5a9cfda0e9934e6fa48413c89da7ff507e71a259c2",
   "evidence_mode": "always",
-  "file_count": 326,
+  "file_count": 327,
   "files": [
     {
       "byte_identical_to_source": true,
@@ -39,9 +39,9 @@
       "byte_identical_to_source": true,
       "path": "README.md",
       "rule": "readme",
-      "sha256": "fb37c8dabf56facec23bbe47c83b7fcfface9e43db32e6fc251346c2cfb7dcaf",
-      "size": 6532,
-      "source": "override:docs/entrega/README-PUBLIC-EN.md"
+      "sha256": "2abdc792f399dbe01df238f140c39e78c7248bee909e3402a483d627877c01cc",
+      "size": 6489,
+      "source": "override:docs/entrega/README-PUBLIC-EN-ABIERTA-8.md"
     },
     {
       "byte_identical_to_source": true,
@@ -63,8 +63,8 @@
       "byte_identical_to_source": true,
       "path": "apps/web/app.js",
       "rule": "web_assets",
-      "sha256": "b4fbfacae2ffe9a9ee64b3bcdbba50404ef4481b32a62f5e631515db4a598de1",
-      "size": 78909,
+      "sha256": "320b33dd75c82ad259af4d8b091ed3e686835afc52b1de4a208742b018af568e",
+      "size": 79287,
       "source": "repo"
     },
     {
@@ -1119,8 +1119,8 @@
       "byte_identical_to_source": true,
       "path": "services/agent/main.py",
       "rule": "services_agent",
-      "sha256": "d7028ad57fb6b16ee2b4ffca28fe0f9ac14d7f7c4cdfb69790d3ae9606a4ba03",
-      "size": 133935,
+      "sha256": "fcdd3cfd1a92afde5772ab9143751da5ddb4f4613d7cb399ad392ee43bb18e62",
+      "size": 134861,
       "source": "repo"
     },
     {
@@ -1989,6 +1989,14 @@
     },
     {
       "byte_identical_to_source": true,
+      "path": "tests/backend/test_public_levels.py",
+      "rule": "tests",
+      "sha256": "a7cadf5c9284b01d91c59a292dda642567e9b00b9e11973918dbb35d9a84d0e6",
+      "size": 3653,
+      "source": "repo"
+    },
+    {
+      "byte_identical_to_source": true,
       "path": "tests/backend/test_reasoning_config.py",
       "rule": "tests",
       "sha256": "14aef074761a3e0cd44eda9a7427e9b5628466546d93fb97ec29378f339d51b9",
@@ -2612,7 +2620,7 @@
       "source": "repo"
     }
   ],
-  "generated_at_utc": "2026-11-08T22:29:30+00:00",
+  "generated_at_utc": "2026-11-08T23:37:17+00:00",
   "generator": "build_public_release",
   "license": {
     "file_present": true,
@@ -2866,7 +2874,7 @@
       "services_agent": 60,
       "slides": 1,
       "state_backup_cli": 1,
-      "tests": 170,
+      "tests": 171,
       "third_party_notices": 1,
       "web_assets": 41
     },
@@ -2952,7 +2960,7 @@
         "rule": "public_release_docs"
       }
     ],
-    "files_selected": 324,
+    "files_selected": 325,
     "link_violations": [],
     "missing_required": [],
     "optional_absent": [
@@ -2978,7 +2986,7 @@
       }
     ],
     "overrides": {
-      "README.md": "docs/entrega/README-PUBLIC-EN.md",
+      "README.md": "docs/entrega/README-PUBLIC-EN-ABIERTA-8.md",
       "docs/release/PUBLIC-OPERATIONS.md": "docs/entrega/PUBLIC-OPERATIONS-PAQUETE.md",
       "docs/release/PUBLIC-PROVENANCE.md": "docs/entrega/PUBLIC-PROVENANCE-PAQUETE.md",
       "scripts/evaluation/README.md": "docs/entrega/README-EVALUACION-PAQUETE.md"

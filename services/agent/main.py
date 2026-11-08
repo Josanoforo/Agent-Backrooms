@@ -312,7 +312,7 @@ async def config():
     if room_only:
         call_limits['per_level'].clear()
     call_limits['per_level'].update(dict.fromkeys(room_levels, room_call_limit()))
-    data = {"missions": missions.catalog(), "models": [model] if model else [], "levels": LEVELS + room_levels, "available_levels": AVAILABLE_LEVELS + room_levels, "execution_mode": "docker", "configured": provider.configured(), "run_available": provider.configured() and (public_demo() or bool(os.getenv('ESCAPE_OPERATOR_TOKEN'))) and not exhausted and len(active) < sum(guards.capacities()) and block is None, "daily_inference_budget": daily, "concurrent_runs_limit": guards.capacities()[0], "queue_capacity": guards.capacities()[1], "quota_exhausted": exhausted, "quota_remaining": quota, "run_authorization_required": not public_demo(), "profile": experiment.describe(), "restored_blocked": bool(block) and block['reason'] == 'restored_state_unreconciled', "admission_blocked": block['reason'] if block else None, "usage_cost_estimate": "not_configured" if rate is None else "invalid" if rate == {} else "configured", "cancel_supported": True, "level_call_limits": call_limits, "evidence_origin": ops.declared_origin()}
+    data = {"missions": missions.catalog(), "models": [model] if model else [], "levels": LEVELS + room_levels, "available_levels": AVAILABLE_LEVELS + room_levels, "execution_mode": "docker", "configured": provider.configured(), "run_available": provider.configured() and (public_demo() or bool(os.getenv('ESCAPE_OPERATOR_TOKEN'))) and not exhausted and len(active) < sum(guards.capacities()) and block is None, "daily_inference_budget": daily, "concurrent_runs_limit": guards.capacities()[0], "queue_capacity": guards.capacities()[1], "quota_exhausted": exhausted, "quota_remaining": quota, "run_authorization_required": not (public_demo() or bool(public_levels())), "public_levels": sorted(public_levels()), "profile": experiment.describe(), "restored_blocked": bool(block) and block['reason'] == 'restored_state_unreconciled', "admission_blocked": block['reason'] if block else None, "usage_cost_estimate": "not_configured" if rate is None else "invalid" if rate == {} else "configured", "cancel_supported": True, "level_call_limits": call_limits, "evidence_origin": ops.declared_origin()}
     if room_day is not None:
         data['d2b_authorized_day_utc'] = room_day
     if os.getenv('ESCAPE_ROOMS_AGENT_SHELL')=='1':
@@ -374,6 +374,22 @@ def operator_authorized(authorization, token):
 
 def public_demo():
     return os.getenv("ESCAPE_PUBLIC_DEMO") == "1"
+
+
+def public_levels():
+    """Levels a visitor may start without the operator token (ESCAPE_PUBLIC_LEVELS, comma list).
+
+    Narrow by design: only a single room level with no mission, on the actor service's
+    bounded slots and under the same daily budget, rate limit and quota guards. Everything
+    else (history, comparison, cancellation, external agents) still needs the token."""
+    raw = os.getenv("ESCAPE_PUBLIC_LEVELS", "")
+    return frozenset(x.strip() for x in raw.split(",") if x.strip())
+
+
+def public_level_request(body):
+    return (body.mission is None and len(body.levels) == 1 and body.levels[0] in public_levels()
+            and body.catalog_profile is None and body.catalog_variant is None
+            and body.injection_variant is None)
 
 
 def private_catalog_enabled():
@@ -799,7 +815,8 @@ async def admit_requested_run(body, request, *, d5=None, plan=None):
     if room_run or (guards.room_day_guard_enabled() and os.getenv('ESCAPE_ROOMS_AGENT_SHELL')!='1'):
         if not private_rooms_enabled() or external.CURRENT.get() is not None:
             raise HTTPException(404, 'Room experiment unavailable')
-        operator_gate(request)
+        if not public_level_request(body):
+            operator_gate(request)
         if (not room_run or len(body.levels) != 1 or body.mission is not None or body.injection_variant is not None
                 or body.catalog_profile is not None or body.catalog_variant is not None):
             raise HTTPException(422, 'A room run takes exactly one room level and no other option')
@@ -833,7 +850,8 @@ async def admit_requested_run(body, request, *, d5=None, plan=None):
     token = os.getenv('ESCAPE_OPERATOR_TOKEN')
     if (not token and not public_demo()) or not provider.configured():
         raise HTTPException(503, 'Run configuration unavailable')
-    if not public_demo() and not operator_authorized(request.headers.get('authorization', ''), token):
+    if (not public_demo() and not public_level_request(body)
+            and not operator_authorized(request.headers.get('authorization', ''), token)):
         raise HTTPException(401, 'Operator authorization required')
     if body.model != (external.CURRENT.get()["model"] if external.CURRENT.get() else os.getenv("ESCAPE_MODEL")):
         raise HTTPException(422, "Model is not configured")
